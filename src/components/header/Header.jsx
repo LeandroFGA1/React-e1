@@ -40,7 +40,7 @@ const BarList = styled.ul`
     display: flex;
     font-size: 18px;
     text-transform: uppercase;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 `;
 const ItemNav =styled.li`
@@ -51,7 +51,14 @@ const ItemNav =styled.li`
     &:hover > .prueba{
         display: block;
     }
-
+    &:hover{
+        
+        :first-child {
+            span{
+                color:white;
+            }
+        }
+    }
 `;
 const ItemRef = styled.a`
     text-decoration: none;
@@ -74,15 +81,31 @@ const SearchContainer = styled.div`
     img{
         width: 25px;
         height: 25px;
+        filter: opacity(50%);
+    
+    &:hover{
+        filter: opacity(100%);
+        filter: drop-shadow(5px 2px 4px rgb(255, 255, 255));
+    }
+
     }
 `;
 const CartItem = styled.div`
     display: flex;
     align-items: center;
 
+    &:hover{
+        border-bottom: 2px solid grey;
+    }
+
     img{
         width: 30px;
         height: 30px;
+        filter: opacity(50%);
+
+    &:hover{
+        filter: opacity(100%);
+    }
     }
 `;
 
@@ -98,12 +121,7 @@ function Header() {
                     <ItemNav>
                         <ItemRef href="#">
                             <span>inicio</span>
-                            <img className='nav-arrow-down' src={images.arrowDown} alt="" />
                         </ItemRef>
-                        <div className='prueba'>
-                                <p>Lorem amet consectetur adipis</p>
-                                <p>met consectetur adipisicing elit. Soluta, amet expedita! Soluta expedita porro tatum.</p>
-                        </div>
                     </ItemNav>
                     <ItemNav>
                         <ItemRef href="#">
@@ -111,8 +129,11 @@ function Header() {
                             <img className='nav-arrow-down' src={images.arrowDown} alt="" />
                         </ItemRef>
                         <div className='prueba'>
-                                <p>Lorer sit amet consectetur adipis</p>
-                                <p>Lorem ipsum dolor sir adipisicing elit. Soluta, amet expedita! Soluta expedita porro tatum.</p>
+                            <img src={images.triangle} className='triangle' alt="" />
+                                <div className='content'>
+                                    <p>Lorem amet consectetur adipis</p>
+                                    <p>met consectetur adipisicing elit. Soluta, amet expedita! Soluta expedita porro tatum.</p>
+                                </div>
                         </div>
                     </ItemNav>
                     <ItemNav>
@@ -121,8 +142,11 @@ function Header() {
                             <img className='nav-arrow-down' src={images.arrowDown} alt="" /> 
                         </ItemRef>
                         <div className='prueba'>
-                                <p>Lorem ipsum dolor sit amet adipis</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing  expedita! Soluta expedita porro tatum.</p>
+                        <img src={images.triangle} className='triangle' alt="" />
+                            <div className='content'>
+                                <p>Lorem amet consectetur adipis</p>
+                                <p>met consectetur adipisicing elit. Soluta, amet expedita! Soluta expedita porro tatum.</p>
+                            </div>
                         </div>
                     </ItemNav>
                     
@@ -132,8 +156,11 @@ function Header() {
                             <img className='nav-arrow-down' src={images.arrowDown} alt="" />
                         </ItemRef>
                         <div className='prueba'>
-                                <p>Lor dolor sit amet consectetur adipis</p>
-                                <p>Loremamet expedita! Soluta expedita porro tatum.</p>
+                            <img src={images.triangle} className='triangle' alt="" />
+                            <div className='content'>
+                                <p>Lorem amet consectetur adipis</p>
+                                <p>met consectetur adipisicing elit. Soluta, amet expedita! Soluta expedita porro tatum.</p>
+                            </div>
                         </div>
                     </ItemNav>
                     <ItemNav>
@@ -142,8 +169,11 @@ function Header() {
                             <img className='nav-arrow-down' src={images.arrowDown} alt="" />
                         </ItemRef>
                         <div className='prueba'>
-                                <p>Loetur adipis</p>
-                                <p>Lorem ipsum dolopedita! Soluta expedita porro tatum.</p>
+                        <img src={images.triangle} className='triangle' alt="" />
+                            <div className='content'>
+                                <p>Lorem amet consectetur adipis</p>
+                                <p>met consectetur adipisicing elit. Soluta, amet expedita! Soluta expedita porro tatum.</p>
+                            </div>
                         </div>
                     </ItemNav>
                 </BarList>
@@ -151,7 +181,7 @@ function Header() {
             <OthersContainer>
                 <CartContainer>
                     <CartItem>
-                        <img src={images.cart} alt="" />
+                        <img src={images.cart} className='cart-img' alt="" />
                         <span>0</span>
                     </CartItem>
                 </CartContainer>

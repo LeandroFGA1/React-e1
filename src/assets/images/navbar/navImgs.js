@@ -3,6 +3,7 @@ import cart from "./cart-large.svg";
 import cartPlus from "./cart-plus.svg";
 import loupe from "./loupe-search.svg";
 import arrowDown from "./arrow-down.svg";
+import triangle from "./triangle.svg"
 
 export default {
     "logoPage": logo,
@@ -10,4 +11,5 @@ export default {
     "cartPlus":cartPlus,
     "loupe":loupe,
     "arrowDown":arrowDown,
+    "triangle":triangle
 }
