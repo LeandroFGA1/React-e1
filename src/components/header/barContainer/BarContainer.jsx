@@ -136,10 +136,7 @@ function BarContainerMain() {
 
                 ))}
                 
-            </BarList>
-            <BoxSearch>
-                {/* agregar funcion buscadora */}
-            </BoxSearch>
+            </BarList> 
         </BarContainer>
     )
 }

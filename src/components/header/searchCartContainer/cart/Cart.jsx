@@ -12,6 +12,7 @@ const CartHeader = styled.a`
     display: flex;
     text-decoration: none;
     align-items: center;
+    border-bottom: 3px solid transparent;
     img{
         width: 30px;
         height: 30px;
@@ -31,7 +32,7 @@ const CartHeader = styled.a`
 `;
 const ToggleDropCart = styled.div`
     display: ${props => (props.isVisible ? 'block' : 'none')};
-    margin-top: 13px;
+    margin-top: 13.5px;
     width: 100px;
     background-color: red;
     position: absolute;
