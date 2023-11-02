@@ -1,19 +1,10 @@
 .nav-arrow-down{
     width: 15px;
     height: 15px;
-    filter: contrast(90%);
-}
-.prueba{
-    display: none;
-    width: 350px;
-    margin-top: -16px;
 }
 .triangle{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     align-items: center;
 }
-.content{
-    margin-top: -5px;
-    background-color: #fff;
-}
+
