@@ -40,7 +40,10 @@ const InputContainer = styled.div`
         width: 25px;
         margin-left: 15%;
     }
-
+    input::placeholder {
+    color: #999;
+    padding-left:20px; /* Cambia el color del placeholder a gris, puedes usar cualquier color que desees */
+    }
     input{
 
         border: none;
@@ -68,7 +71,7 @@ const Search = () => {
             </a>
             <InputContainer isVisible={isVisibleSearch}>
                 <img src={images.loupe} isVisible={isVisibleSearch} onClick={InputDisplay}/>
-                <input type="text" />
+                <input type="text" placeholder='escribe aqui' />
             </InputContainer>
         </SearchContainer>
     )
