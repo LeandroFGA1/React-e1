@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import images from "../../../../assets/images/navbar/navImgs"
-
 const SearchContainer = styled.div`
     width: 60px;
     display: flex;
@@ -29,7 +28,7 @@ const InputContainer = styled.div`
     position: absolute;
     width: 80%; /* Ocupa el 80% del ancho de la pantalla */
     height: 60px;
-    background-color: #464646fd;
+    background-color: RGB(67.64, 62.04, 55.44);
     display: ${props => (props.isVisible ? 'flex' : 'none')};
     align-items: center;
     gap:10px;
