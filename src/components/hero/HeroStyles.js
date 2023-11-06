@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import images from "../../../assets/images/hero/HeroImgs"
+import images from "../../assets/images/hero/HeroImgs"
 
 export const HeroContainer = styled.div`
     margin-top: 60px;
@@ -9,7 +9,6 @@ export const HeroStartContainer = styled.section`
     margin: 0px 10%;
     width: 80%;
     height: 80vh;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,13 +113,16 @@ export const AddToCartButton = styled.button`
 `;
 
 export const SpanComponent = styled.span`
+    cursor: pointer;
+    margin-top: 30px;
     background-color: purple;
     width: fit-content;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
     align-self: center;
     text-shadow: 10px 0px 10px black;
+    
 `;

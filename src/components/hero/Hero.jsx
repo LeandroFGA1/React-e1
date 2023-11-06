@@ -1,5 +1,5 @@
 import React from 'react'
-import images from "../../../assets/images/hero/HeroImgs"
+import images from "../../assets/images/hero/HeroImgs"
 import { AddToCartButton, HeroContainer, HeroStart, HeroStartComponents, HeroStartContainer, ImageComponent, SpanComponent } from "./HeroStyles"
 
 

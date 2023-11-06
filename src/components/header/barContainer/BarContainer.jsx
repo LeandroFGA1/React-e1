@@ -92,7 +92,6 @@ const ToggleDropContent = styled.ul`
     top: 100%; /* Aparece debajo del TitleItem */
     background-color: white;
     padding: 10px;
-    z-index: 1;
     width: 200px;
     list-style: none;
 `;

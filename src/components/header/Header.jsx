@@ -12,6 +12,7 @@ const NavContainer = styled.div`
     background-color: rgba(26, 26, 26, 0.8);
     display: flex;
     justify-content: space-around;
+    z-index: 1;
 
 
 `;
