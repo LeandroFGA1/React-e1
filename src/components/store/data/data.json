@@ -1,14 +1,14 @@
 [
     {
         "name":"dota 2",
-        "imageID":"",
+        "imageID":"dota2",
         "price":"",
         "id":""
 
     },
     {
-        "name":"genshin",
-        "imageID":"",
+        "name":"genshin impact",
+        "imageID":"genshinImpact",
         "price":"",
         "id":""
 
@@ -28,15 +28,15 @@
 
     },
     {
-        "name":"",
-        "imageID":"",
+        "name":"metal gear solid 3",
+        "imageID":"metalGearSolid3",
         "price":"",
         "id":""
 
     },
     {
-        "name":"Fifa",
-        "imageID":"",
+        "name":"Fifa 2010",
+        "imageID":"fifa2010",
         "price":"",
         "id":""
 
@@ -50,7 +50,7 @@
     },
     {
         "name":"Doom",
-        "imageID":"",
+        "imageID":"doom",
         "price":"",
         "id":""
 

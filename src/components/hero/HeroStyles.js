@@ -92,7 +92,7 @@ export const AddToCartButton = styled.button`
     border: none;
     border-radius: 5px;
     position: absolute;
-    left: calc(75%);
+    left: calc(72%);
     top: 85%;
     font-weight: 700;
     text-transform: capitalize;
