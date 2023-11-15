@@ -6,13 +6,12 @@ import { AddToCartButton, HeroContainer, HeroStart, HeroStartComponents, HeroSta
 function Hero() {
     return (
     <HeroContainer>
-        <h2>Hot sale</h2>
         <HeroStartContainer>
             <HeroStart>
                 <HeroStartComponents>
-                    <ImageComponent src={images.bioshockLogo}/>
-                    <p>Step into the fallen utopia of Rapture and uncover the horrors and wonders of the masterpiece</p>
                     <SpanComponent>available now</SpanComponent>
+                    <p>Step into the fallen utopia of Rapture and uncover the horrors and wonders of the masterpiece</p>
+                    <ImageComponent src={images.bioshockLogo}/>
                     
                     <AddToCartButton>
                         <span>$10,30</span>

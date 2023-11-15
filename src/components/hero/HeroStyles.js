@@ -2,19 +2,18 @@ import styled from "styled-components";
 import images from "../../assets/images/hero/HeroImgs"
 
 export const HeroContainer = styled.div`
-    margin-top: 60px;
+    margin-top: 30px;
 `;
 export const HeroStartContainer = styled.section`
     position: relative;
-    margin: 0px 10%;
-    width: 80%;
-    height: 80vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 `;
 export const HeroStart = styled.div`
-    width: 90%;
+    width: 100%;
     height: 90%;
     background-image: url(${images.bioshock});
     background-repeat: no-repeat;
@@ -33,20 +32,14 @@ export const HeroStartComponents =styled.div`
     width: 40%;
     color:#ccc;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     gap: 30px;
 
-
-    h3{
-        width: fit-content;
-        align-self:center;
-        border-bottom: 2px solid purple;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
     p{
-        margin-top: 30px;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        width: 90%;
+        margin-left: 10px;
     }
 
     @media (max-width:550px){
@@ -74,10 +67,11 @@ export const HeroStartComponents =styled.div`
 `;
 
 export const ImageComponent = styled.img`
-    margin-top: 10%;
     margin-left: 2%;
+    margin-bottom: 70px;
     width:100%;
     height: fit-content;
+    filter: drop-shadow(0 0px 50px black);
     @media (max-width:550px){
         display: none;
     }
@@ -114,7 +108,6 @@ export const AddToCartButton = styled.button`
 
 export const SpanComponent = styled.span`
     cursor: pointer;
-    margin-top: 30px;
     background-color: purple;
     width: fit-content;
     padding: 15px;
@@ -124,5 +117,6 @@ export const SpanComponent = styled.span`
     text-transform: uppercase;
     align-self: center;
     text-shadow: 10px 0px 10px black;
+    margin-bottom: 20px;
     
 `;

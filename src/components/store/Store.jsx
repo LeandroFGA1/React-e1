@@ -11,11 +11,11 @@ function Store() {
             <h2>Populars Games</h2>
             <GamesContainer>
                 {data.map((item)=>(
-                    <GameCard id={item.id}>
+                    <GameCard className={item.id || "generic-card"} >
                         <img src={images[item.imageID] || images.cardDefault} alt="" />
                         <GameCardInfo>
-                            <GameName id='game-name'>{item.name || 'Default Name'}</GameName>
-                            <GamePrice id="game-price">{item.price || '$1'}</GamePrice>
+                            <GameName className='game-name'>{item.name || 'Default Name'}</GameName>
+                            <GamePrice className="game-price">{item.price || '$1'}</GamePrice>
                         </GameCardInfo>
                         
                     </GameCard>

@@ -5,9 +5,14 @@ import Header from './components/header/Header.jsx'
 import Hero from './components/hero/Hero.jsx'
 import Store from './components/store/Store.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("header")).render(
   <React.StrictMode>
     <Header/>
+  </React.StrictMode>
+)
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <Hero/>
     <Store/>
   </React.StrictMode>,

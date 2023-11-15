@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const GamesContainer = styled.div`
     margin: 0 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     grid-row-gap: 60px;
     justify-items: center;
     align-content: center;
@@ -51,7 +51,7 @@ export const GameCardInfo = styled.a`
 
 `;
 export const GameName = styled.span`
-
+    text-align: center;
 
 `;
 export const GamePrice = styled.span`

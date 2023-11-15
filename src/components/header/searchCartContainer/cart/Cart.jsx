@@ -7,7 +7,8 @@ const CartContainer = styled.div`
     width: 40px;
 
 `;
-const CartHeader = styled.a`
+const CartHeader = styled.div`
+    cursor: pointer;
     position: relative;
     display: flex;
     text-decoration: none;
@@ -57,7 +58,7 @@ const Cart = () => {
     return (
     <CartContainer>
         {/* es una prueba de funcionamiento*/}
-        <CartHeader href='#' onClick={() => { handleIncrement(); toggleCartDisplay(); }}>  
+        <CartHeader onClick={() => { handleIncrement(); toggleCartDisplay(); }}>  
             <img src={images.cart} alt="" />
             <Counter>{count}</Counter>
         </CartHeader>

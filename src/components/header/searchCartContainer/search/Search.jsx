@@ -6,29 +6,30 @@ const SearchContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    a{
-        position: relative;
-        width: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 25px;
-            height: 25px;
-            
-            filter:opacity(60%);
-            &:hover{
-                filter: opacity(100%);
-            }
-        }
-    }
+    
 `;
+const SearchImg = styled.div`
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 25px;
+        height: 25px;
+        
+        filter:opacity(60%);
+        &:hover{
+            filter: opacity(100%);
+        }
+    }`;
 
 const InputContainer = styled.div`
     position: absolute;
     width: 80%; /* Ocupa el 80% del ancho de la pantalla */
     height: 60px;
-    background-color: RGB(67.64, 62.04, 55.44);
+    background-color: rgb(67.64, 62.04, 55.44);
     display: ${props => (props.isVisible ? 'flex' : 'none')};
     align-items: center;
     gap:10px;
@@ -65,9 +66,9 @@ const Search = () => {
         
 
         <SearchContainer>
-            <a href="#" onClick={InputDisplay}>
+            <SearchImg href="#" onClick={InputDisplay}>
                 <img src={images.loupe} alt="" />
-            </a>
+            </SearchImg>
             <InputContainer isVisible={isVisibleSearch}>
                 <img src={images.loupe} isVisible={isVisibleSearch} onClick={InputDisplay}/>
                 <input type="text" placeholder='escribe aqui' />
