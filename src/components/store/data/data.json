@@ -275,67 +275,64 @@
         "price": "39.99",
         "category": ["MMORPG"]
     },
-    [
-        {
-            "name": "Horizon Zero Dawn",
-            "imageID": "horizonZeroDawn",
-            "price": "39.99",
-            "category": ["Action", "Adventure"]
-        },
-        {
-            "name": "Mortal Kombat 11",
-            "imageID": "mortalKombat11",
-            "price": "49.99",
-            "category": ["Fighting"]
-        },
-        {
-            "name": "The Last of Us Part II",
-            "imageID": "theLastOfUsPartII",
-            "price": "59.99",
-            "category": ["Action", "Adventure"]
-        },
-        {
-            "name": "Civilization V",
-            "imageID": "civilizationV",
-            "price": "29.99",
-            "category": ["Strategy"]
-        },
-        {
-            "name": "Star Wars: Battlefront II",
-            "imageID": "starWarsBattlefrontII",
-            "price": "34.99",
-            "category": ["Shooter"]
-        },
-        {
-            "name": "Diablo III",
-            "imageID": "diabloIII",
-            "price": "29.99",
-            "category": ["Action", "RPG"]
-        },
-        {
-            "name": "Tom Clancy's The Division 2",
-            "imageID": "theDivision2",
-            "price": "44.99",
-            "category": ["Action", "RPG"]
-        },
-        {
-            "name": "League of Legends",
-            "imageID": "leagueOfLegends",
-            "price": "0",
-            "category": ["MOBA"]
-        },
-        {
-            "name": "Destiny 2",
-            "imageID": "destiny2",
-            "price": "0",
-            "category": ["Shooter", "MMORPG"]
-        },
-        {
-            "name": "Sims City",
-            "imageID": "simsCity",
-            "price": "19.99",
-            "category": ["Simulation"]
-        }
-    ]
-    
+    {
+        "name": "Horizon Zero Dawn",
+        "imageID": "horizonZeroDawn",
+        "price": "39.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Mortal Kombat 11",
+        "imageID": "mortalKombat11",
+        "price": "49.99",
+        "category": ["Fighting"]
+    },
+    {
+        "name": "The Last of Us Part II",
+        "imageID": "theLastOfUsPartII",
+        "price": "59.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Civilization V",
+        "imageID": "civilizationV",
+        "price": "29.99",
+        "category": ["Strategy"]
+    },
+    {
+        "name": "Star Wars: Battlefront II",
+        "imageID": "starWarsBattlefrontII",
+        "price": "34.99",
+        "category": ["Shooter"]
+    },
+    {
+        "name": "Diablo III",
+        "imageID": "diabloIII",
+        "price": "29.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Tom Clancy's The Division 2",
+        "imageID": "theDivision2",
+        "price": "44.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "League of Legends",
+        "imageID": "leagueOfLegends",
+        "price": "0",
+        "category": ["MOBA"]
+    },
+    {
+        "name": "Destiny 2",
+        "imageID": "destiny2",
+        "price": "0",
+        "category": ["Shooter", "MMORPG"]
+    },
+    {
+        "name": "Sims City",
+        "imageID": "simsCity",
+        "price": "19.99",
+        "category": ["Simulation"]
+    }
 ]
