@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import styled from "styled-components"
 import images from "../../assets/images/navbar/navImgs"
 import BarContainer from "./barContainer/BarContainer"
@@ -36,13 +36,10 @@ const LogoContainer = styled.div`
     }
 
     @media (max-width: 767px) {
-  /* Estilos para pantallas de ancho menor o igual a 767px */
         span{
             display: none;
         }
-}
-
-
+    }
 `
 ;
 

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import data from "./data/data.json"
 import images from "../../../assets/images/navbar/navImgs"
 import "./BarContainer.css"
+import { Link } from 'react-router-dom';
 const BarContainer = styled.div`
     position: relative;
     input{
@@ -68,7 +69,7 @@ const ListItem = styled.li`
         margin-left: 40px;
     }
 `;
-const TitleItem = styled.a`
+const TitleItem = styled(Link)`
     display: block;
     position: relative;
     text-decoration: none;
@@ -101,6 +102,21 @@ const ContentItem = styled.a`
 `;
 const BoxSearch = styled.div`
 `;
+const TitleItemInit = styled.a`
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 15px;
+    color:#ccc;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 15px;
+
+    span{
+        font-size: 10px;
+    }
+
+`;
 function BarContainerMain() {
     return (
         <BarContainer>
@@ -112,11 +128,11 @@ function BarContainerMain() {
             </label>
             <BarList className='bar-list'>
                 <ListItem className='inicio-nav'>
-                    <TitleItem href='#'>Inicio</TitleItem>
+                    <TitleItemInit href="#">Inicio</TitleItemInit>
                 </ListItem>
                 {data.map((item)=>(
                     <ListItem className={item.title === "log in" ? "log-in-nav" : item.title+"-nav"}>
-                        <TitleItem href="#">{item.title} <span>▼</span></TitleItem>
+                        <TitleItem to={`/${item.title.toLowerCase()}`}>{item.title} <span>▼</span></TitleItem>
                         <img src={images.triangle} className='triangle' alt="" />
                         <ToggleDropContent>
                             {item.content.map((content) => (
