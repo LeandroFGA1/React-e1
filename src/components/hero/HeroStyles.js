@@ -2,7 +2,7 @@ import styled from "styled-components";
 import images from "../../assets/images/hero/HeroImgs"
 
 export const HeroContainer = styled.div`
-    margin-top: 30px;
+    margin-top: -33px;
 `;
 export const HeroStartContainer = styled.section`
     position: relative;

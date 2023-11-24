@@ -27,9 +27,10 @@ const SearchImg = styled.div`
 
 const InputContainer = styled.div`
     position: absolute;
+    left: 0%;
     width: 80%; /* Ocupa el 80% del ancho de la pantalla */
     height: 60px;
-    background-color: rgb(67.64, 62.04, 55.44);
+    background-color: #1d1c1c;
     display: ${props => (props.isVisible ? 'flex' : 'none')};
     align-items: center;
     gap:10px;

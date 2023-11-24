@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import data from "./data/data.json"
+import data from "../../../data/header/dataHeader.json"
 import images from "../../../assets/images/navbar/navImgs"
 import "./BarContainer.css"
 import { Link } from 'react-router-dom';
@@ -67,6 +67,7 @@ const ListItem = styled.li`
         position: absolute;
         height: 90px;
         margin-left: 40px;
+        margin-top: -40px;
     }
 `;
 const TitleItem = styled(Link)`
@@ -128,7 +129,7 @@ function BarContainerMain() {
             </label>
             <BarList className='bar-list'>
                 <ListItem className='inicio-nav'>
-                    <TitleItemInit href="#">Inicio</TitleItemInit>
+                    <TitleItem to="/">Inicio</TitleItem>
                 </ListItem>
                 {data.map((item)=>(
                     <ListItem className={item.title === "log in" ? "log-in-nav" : item.title+"-nav"}>

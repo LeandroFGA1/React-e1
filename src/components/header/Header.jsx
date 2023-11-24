@@ -5,7 +5,8 @@ import BarContainer from "./barContainer/BarContainer"
 import "./Header.css"
 import SearchCartContainer from './searchCartContainer/SearchCartContainer'
 
-const NavContainer = styled.div`
+const NavContainer = styled.nav`
+    
     position: fixed;
     height: 60px;
     width: 100%;
