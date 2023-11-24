@@ -1,0 +1,338 @@
+[
+    {
+        "name": "Dota 2",
+        "imageID": "dota2",
+        "price": "0",
+        "category": ["MOBA"]
+    },
+    {
+        "name": "Genshin Impact",
+        "imageID": "genshinImpact",
+        "price": "0",
+        "category": ["RPG"]
+    },
+    {
+        "name": "Zohan",
+        "imageID": "zohan",
+        "price": "5.55",
+        "category": ["Unknown"]
+    },
+    {
+        "name": "UnknownGame1",
+        "imageID": "unknownGame1",
+        "price": "5.55",
+        "category": ["Unknown"]
+    },
+    {
+        "name": "Metal Gear Solid 3",
+        "imageID": "metalGearSolid3",
+        "price": "39.99",
+        "category": ["Action"]
+    },
+    {
+        "name": "FIFA 2010",
+        "imageID": "fifa2010",
+        "price": "15.99",
+        "category": ["Sports"]
+    },
+    {
+        "name": "Zohan 2",
+        "imageID": "zohan2",
+        "price": "5.55",
+        "category": ["Unknown"]
+    },
+    {
+        "name": "Doom",
+        "imageID": "doom",
+        "price": "19.99",
+        "category": ["Shooter"]
+    },
+    {
+        "name": "Cyberpunk 2077",
+        "imageID": "cyberpunk2077",
+        "price": "49.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Among Us",
+        "imageID": "amongUs",
+        "price": "4.99",
+        "category": ["Casual"]
+    },
+    {
+        "name": "The Legend Of Zelda",
+        "imageID": "theLegendOfZelda",
+        "price": "59.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Rocket League",
+        "imageID": "rocketLeague",
+        "price": "19.99",
+        "category": ["Sports"]
+    },
+    {
+        "name": "Fortnite",
+        "imageID": "fortnite",
+        "price": "0",
+        "category": ["Battle Royale"]
+    },
+    {
+        "name": "Apex Legends",
+        "imageID": "apexLegends",
+        "price": "0",
+        "category": ["Battle Royale"]
+    },
+    {
+        "name": "Minecraft",
+        "imageID": "minecraft",
+        "price": "24.99",
+        "category": ["Sandbox"]
+    },
+    {
+        "name": "Red Dead Redemption 2",
+        "imageID": "redDeadRedemption2",
+        "price": "44.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Overwatch",
+        "imageID": "overwatch",
+        "price": "29.99",
+        "category": ["Shooter", "MOBA"]
+    },
+    {
+        "name": "Fallout 4",
+        "imageID": "fallout4",
+        "price": "29.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Assassins Creed Odyssey",
+        "imageID": "assassinsCreedOdyssey",
+        "price": "39.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Star Wars Jedi Fallen Order",
+        "imageID": "starWarsJediFallenOrder",
+        "price": "49.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "The Witcher 3 Wild Hunt",
+        "imageID": "theWitcher3WildHunt",
+        "price": "29.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "DarkSouls 3",
+        "imageID": "darkSouls3",
+        "price": "39.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Rainbow Six Siege",
+        "imageID": "rainbowSixSiege",
+        "price": "34.99",
+        "category": ["Tactical", "Shooter"]
+    },
+    {
+        "name": "FIFA 22",
+        "imageID": "fifa22",
+        "price": "59.99",
+        "category": ["Sports"]
+    },
+    {
+        "name": "No Mans Sky",
+        "imageID": "noMansSky",
+        "price": "29.99",
+        "category": ["Survival"]
+    },
+    {
+        "name": "Monster Hunter World",
+        "imageID": "monsterHunterWorld",
+        "price": "39.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Borderlands 3",
+        "imageID": "borderlands3",
+        "price": "49.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Dead Cells",
+        "imageID": "deadCells",
+        "price": "24.99",
+        "category": ["Action", "Roguelike"]
+    },
+    {
+        "name": "Stardew Valley",
+        "imageID": "stardewValley",
+        "price": "14.99",
+        "category": ["Farming", "Simulation"]
+    },
+    {
+        "name": "Terraria",
+        "imageID": "terraria",
+        "price": "9.99",
+        "category": ["Sandbox"]
+    },
+    {
+        "name": "Hollow Knight",
+        "imageID": "hollowKnight",
+        "price": "14.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Celeste",
+        "imageID": "celeste",
+        "price": "19.99",
+        "category": ["Platformer"]
+    },
+    {
+        "name": "The Elder Scrolls V Skyrim",
+        "imageID": "theElderScrollsVSkyrim",
+        "price": "39.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Subnautica",
+        "imageID": "subnautica",
+        "price": "29.99",
+        "category": ["Survival"]
+    },
+    {
+        "name": "Oxenfree",
+        "imageID": "oxenfree",
+        "price": "9.99",
+        "category": ["Adventure"]
+    },
+    {
+        "name": "Crysis 3",
+        "imageID": "crysis3",
+        "price": "29.99",
+        "category": ["First-Person", "Shooter"]
+    },
+    {
+        "name": "Civilization VI",
+        "imageID": "civilizationVI",
+        "price": "59.99",
+        "category": ["Strategy"]
+    },
+    {
+        "name": "Grand Theft Auto V",
+        "imageID": "grandTheftAutoV",
+        "price": "29.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Half-Life Alyx",
+        "imageID": "halfLifeAlyx",
+        "price": "39.99",
+        "category": ["VR", "First-Person", "Shooter"]
+    },
+    {
+        "name": "The Outer Worlds",
+        "imageID": "theOuterWorlds",
+        "price": "49.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Resident Evil Village",
+        "imageID": "residentEvilVillage",
+        "price": "59.99",
+        "category": ["Survival", "Horror"]
+    },
+    {
+        "name": "Sekiro: Shadows Die Twice",
+        "imageID": "sekiroShadowsDieTwice",
+        "price": "49.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Tom Clancy's Rainbow Six: Extraction",
+        "imageID": "rainbowSixExtraction",
+        "price": "39.99",
+        "category": ["Tactical", "Shooter"]
+    },
+    {
+        "name": "Watch Dogs: Legion",
+        "imageID": "watchDogsLegion",
+        "price": "44.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "The Sims 4",
+        "imageID": "theSims4",
+        "price": "39.99",
+        "category": ["Life", "Simulation"]
+    },
+    {
+        "name": "World of Warcraft: Shadowlands",
+        "imageID": "worldOfWarcraftShadowlands",
+        "price": "39.99",
+        "category": ["MMORPG"]
+    },
+    {
+        "name": "Horizon Zero Dawn",
+        "imageID": "horizonZeroDawn",
+        "price": "39.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Mortal Kombat 11",
+        "imageID": "mortalKombat11",
+        "price": "49.99",
+        "category": ["Fighting"]
+    },
+    {
+        "name": "The Last of Us Part II",
+        "imageID": "theLastOfUsPartII",
+        "price": "59.99",
+        "category": ["Action", "Adventure"]
+    },
+    {
+        "name": "Civilization V",
+        "imageID": "civilizationV",
+        "price": "29.99",
+        "category": ["Strategy"]
+    },
+    {
+        "name": "Star Wars: Battlefront II",
+        "imageID": "starWarsBattlefrontII",
+        "price": "34.99",
+        "category": ["Shooter"]
+    },
+    {
+        "name": "Diablo III",
+        "imageID": "diabloIII",
+        "price": "29.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "Tom Clancy's The Division 2",
+        "imageID": "theDivision2",
+        "price": "44.99",
+        "category": ["Action", "RPG"]
+    },
+    {
+        "name": "League of Legends",
+        "imageID": "leagueOfLegends",
+        "price": "0",
+        "category": ["MOBA"]
+    },
+    {
+        "name": "Destiny 2",
+        "imageID": "destiny2",
+        "price": "0",
+        "category": ["Shooter", "MMORPG"]
+    },
+    {
+        "name": "Sims City",
+        "imageID": "simsCity",
+        "price": "19.99",
+        "category": ["Simulation"]
+    }
+]
