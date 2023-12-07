@@ -3,7 +3,7 @@ import bioshockLogo from "./bioshock1_logo.webp"
 import BioshockShort from "./Bioshock-short.png"
 import bioshockMedium from "./bioshock-medium2.webp"
 import bioshockGif from "./BIOSHOCK-gif.gif"
-import texture from "./texture-wall.jpeg"
+import texture from "./texture-wall.jpg"
 
 export default {
     "bioshock":bioshock,

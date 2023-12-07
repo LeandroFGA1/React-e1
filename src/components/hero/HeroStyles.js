@@ -34,6 +34,8 @@ export const VideoContainer = styled.div`
     background-color: blue;
 
     
+
+    
     video{
         margin-top: -10px;
         width: 100%;
@@ -50,12 +52,12 @@ export const AboutGameVideo = styled.div`
     gap: 20px;
     align-items: center;
     justify-content: space-around;
-    background-size: contain;
 
     span{
         font-size: 20px;
         text-transform: capitalize;
         animation: ${bounce} 2s infinite ;
+        
     }
 
 `;
