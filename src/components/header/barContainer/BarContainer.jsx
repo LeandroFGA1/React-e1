@@ -52,6 +52,10 @@ const ListItem = styled.li`
     align-self: center;
     margin-right:10px;
 
+    &:hover > a > span{
+        color:red;
+    }
+
     &:hover > ul{
         display: flex;
         flex-direction: column;
@@ -59,6 +63,12 @@ const ListItem = styled.li`
     }
 
 
+    
+`;
+const ItemLinked = styled(Link)`
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
     &:hover > img{
         display: block;
     }
@@ -68,17 +78,19 @@ const ListItem = styled.li`
         height: 90px;
         margin-left: 40px;
         margin-top: -40px;
+        cursor: pointer;
     }
 `;
-const TitleItem = styled(Link)`
+
+const TitleItem = styled.span`
     display: block;
     position: relative;
-    text-decoration: none;
     padding: 10px 15px;
     color:#ccc;
     text-transform: uppercase;
     width: 100%;
     font-size: 15px;
+    transition: color 0.3s ease-in-out;
 
     span{
         font-size: 10px;
@@ -101,23 +113,6 @@ const ContentItem = styled.a`
     text-decoration: none;
     color:black;
 `;
-const BoxSearch = styled.div`
-`;
-const TitleItemInit = styled.a`
-    display: block;
-    position: relative;
-    text-decoration: none;
-    padding: 10px 15px;
-    color:#ccc;
-    text-transform: uppercase;
-    width: 100%;
-    font-size: 15px;
-
-    span{
-        font-size: 10px;
-    }
-
-`;
 function BarContainerMain() {
     return (
         <BarContainer>
@@ -129,13 +124,17 @@ function BarContainerMain() {
             </label>
             <BarList className='bar-list'>
                 <ListItem className='inicio-nav'>
-                    <TitleItem to="/">Inicio</TitleItem>
+                    <ItemLinked to="/">
+                        <TitleItem to="/">Inicio</TitleItem>
+                    </ItemLinked>
                 </ListItem>
                 {data.map((item)=>(
                     <ListItem className={item.title === "log in" ? "log-in-nav" : item.title+"-nav"}>
-                        <TitleItem to={`/${item.title.toLowerCase()}`}>{item.title} <span>▼</span></TitleItem>
-                        <img src={images.triangle} className='triangle' alt="" />
-                        <ToggleDropContent>
+                        <ItemLinked to={`/${item.title.toLowerCase()}`}>
+                            <TitleItem >{item.title} {/*<span>▼</span>*/}</TitleItem>
+                            {/* <img src={images.triangle} className='triangle' alt="" /> */}
+                        </ItemLinked>
+                        {/* <ToggleDropContent>
                             {item.content.map((content) => (
                                 <li>
                                     <ContentItem href="#">
@@ -145,7 +144,7 @@ function BarContainerMain() {
                                 
                             ))}
                             
-                        </ToggleDropContent>
+                        </ToggleDropContent> */}
                     </ListItem>
 
 

@@ -15,7 +15,6 @@ const NavContainer = styled.nav`
     justify-content: space-around;
     z-index: 1;
 
-
 `;
 const LogoContainer = styled.div`
     height: 100%;
