@@ -4,6 +4,8 @@ import BioshockShort from "./Bioshock-short.png"
 import bioshockMedium from "./bioshock-medium2.webp"
 import bioshockGif from "./BIOSHOCK-gif.gif"
 import texture from "./texture-wall.jpg"
+import textureSpan from "./texture-span.png"
+
 
 export default {
     "bioshock":bioshock,
@@ -11,5 +13,6 @@ export default {
     "bioshockShort":BioshockShort,
     "bioshockMedium":bioshockMedium,
     "bioshockGif":bioshockGif,
-    "texture":texture
+    "texture":texture,
+    "textureSpan":textureSpan
 }
