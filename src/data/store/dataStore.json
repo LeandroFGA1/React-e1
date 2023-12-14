@@ -2,13 +2,13 @@
     {
         "name": "Dota 2",
         "imageID": "dota2",
-        "price": "0",
+        "price": "10",
         "category": ["MOBA"]
     },
     {
         "name": "Genshin Impact",
         "imageID": "genshinImpact",
-        "price": "0",
+        "price": "30",
         "category": ["RPG"]
     },
     {
@@ -74,13 +74,13 @@
     {
         "name": "Fortnite",
         "imageID": "fortnite",
-        "price": "0",
+        "price": "30",
         "category": ["Battle Royale"]
     },
     {
         "name": "Apex Legends",
         "imageID": "apexLegends",
-        "price": "0",
+        "price": "9",
         "category": ["Battle Royale"]
     },
     {
@@ -320,13 +320,13 @@
     {
         "name": "League of Legends",
         "imageID": "leagueOfLegends",
-        "price": "0",
+        "price": "4",
         "category": ["MOBA"]
     },
     {
         "name": "Destiny 2",
         "imageID": "destiny2",
-        "price": "0",
+        "price": "6",
         "category": ["Shooter", "MMORPG"]
     },
     {
