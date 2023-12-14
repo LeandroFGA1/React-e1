@@ -39,14 +39,13 @@ export const GameCardInfo = styled.a`
     justify-content: center;
 
     &:hover{
-        background-color: aqua;
-        #game-name{
-            display: none;
-        }
-        #game-price{
-            display: block;
-        }
-        
+        background-color: greenyellow;
+    }
+    &:hover > .game-name{
+        display: none;
+    }
+    &:hover >.game-price{
+        display: block;
     }
 
 `;
@@ -56,6 +55,7 @@ export const GameName = styled.span`
 `;
 export const GamePrice = styled.span`
     display: none;
+    cursor: pointer;
 `;
 
 export const BestGames = styled.div`
