@@ -41,8 +41,6 @@ const ToggleDropCart = styled.div`
     position: absolute;
     top:100%;
     left: -200%;
-    display: flex;
-    flex-direction: column;
     padding-left: 10px;
 `;
 const Counter = styled.span`
@@ -72,6 +70,7 @@ const Cart = () => {
 
     const [isToggleVisible, setIsToggleVisible] = useState(false);
     const toggleCartDisplay = () => {
+
         setIsToggleVisible(!isToggleVisible);
     };
 
