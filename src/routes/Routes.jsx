@@ -1,15 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Home from "../pages/home/Home"
-import About from '../pages/about/About'
-import Store from '../pages/store/Store';
-
+import Login from '../pages/log/Login'
+import GameStore from '../pages/gameStore/GameStore'
 function MainRoutes() {
     return (
         <Routes>
             <Route path="/" index element={<Home/>}/>
-            <Route path="/about" element={<About/>} />
-            <Route path='store' element ={<Store/>}/>
+            <Route path="/login" element={<Login/>} />
+            <Route path='/store' element ={<GameStore/>}/>
         </Routes>
     )
 }

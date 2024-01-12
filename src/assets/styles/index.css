@@ -1,19 +1,28 @@
-:root {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-
-  background-color: #242424;
+*{
+  font-family: 'Roboto', sans-serif;
 }
-
-
-body {
+body{
   margin: 0;
   padding: 0;
+  top: 0;
+  left: 0;
 }
-header{
-  height: 60px;
+a{
+  text-decoration: none;
+  color:black;
 }
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+a:visited{
+  color: black;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  width: 100px;
+}
+
+svg{
+  width: 100px;
 }

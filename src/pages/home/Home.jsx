@@ -1,18 +1,11 @@
-// src/pages/HomePage.jsx
-import React from 'react';
-import Hero from '../../components/hero/Hero';
-import Store from '../../components/store/Store';
-import About from "../../components/about/About"
+import React from 'react'
 
-const HomePage = () => {
-    return (
-        <>
-            <Hero/>
-            <Store showGames={false}/>
-            <About/>
-        </>
-        
-    );
-};
+function Home() {
+  return (
+    <>
+      <h1>hola</h1>
+    </>
+  )
+}
 
-export default HomePage;
+export default Home

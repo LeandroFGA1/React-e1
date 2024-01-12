@@ -1,58 +1,70 @@
-
-import styled from "styled-components"
-import images from "../../assets/images/navbar/navImgs"
-import BarContainer from "./barContainer/BarContainer"
-import "./Header.css"
-import SearchCartContainer from './searchCartContainer/SearchCartContainer'
-
-const NavContainer = styled.nav`
-    
-    position: fixed;
-    height: 60px;
-    width: 100%;
-    background-color: rgba(26, 26, 26, 0.8);
-    display: flex;
-    justify-content: space-around;
-    z-index: 1;
-
-`;
-const LogoContainer = styled.div`
-    height: 100%;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color:#ccc;
-    text-align: center;
-
-    span{
-        margin-left: 5px;
-    }
-    
-    img{
-        margin-left: 10px;
-        width: 50px;
-        height: 50px;
-    }
-
-    @media (max-width: 767px) {
-        span{
-            display: none;
-        }
-    }
-`
-;
+import React from 'react'
+import { HeaderContainer, MenuBar, RightContainer, NavbarContainer,LogoContainer } from './headerStyle'
+import { NavLink } from 'react-router-dom'
+import Search from './search/Search'
+import Cart from './cart/Cart'
+import LogIn from './log/LogIn'
+import images from "../../assets/images/directoryImages"
+import { useSelector } from "react-redux";
 
 function Header() {
+    const isDisplayedSelector = useSelector(state => state.rollOutSearch.isDisplayed);
+
     return (
-        <NavContainer>
-            <LogoContainer>
-                <img className='logo-img' src={images.logoPage} alt="" />
-                <span className='sloga-logo'>Cheap game <br/> Best game</span>
+        <HeaderContainer isDisplayedSelector={isDisplayedSelector}>
+            
+            <NavbarContainer className='navbar-container'>
+                <input type="checkbox" name="toggle-menu" id="toggle-menu" />
+                <label htmlFor="toggle-menu">
+                    <MenuBar className='bar-top'/>
+                    <MenuBar className='bar-mid'/>
+                    <MenuBar className='bar-bot'/>
+                </label>
+                <nav className='prueba'>
+                    <NavLink>
+                        store
+                    </NavLink>
+                    <NavLink>
+                        about
+                    </NavLink>
+                    <NavLink>
+                        suport
+                    </NavLink>
+                    
+                </nav>
+                <div className='search-bar'>
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" viewBox="0 0 24 24" 
+                    strokeWidth={1.5} 
+                    stroke="currentColor" 
+                    className="w-6 h-6"
+                    // style={{ color: 'red' }}
+                    >
+                        <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                        stroke="currentColor" />
+                    </svg>
+                    <label htmlFor="search-bar">
+                        <input type="text" name="search-bar" id="search-bar" placeholder='' />
+                        <span>Search Here</span>
+                    </label>
+
+                </div>
+            </NavbarContainer>
+            <LogoContainer className='logo-container'>
+                <a href="#">
+                    <img src={images.logo} alt="" />
+                </a>
             </LogoContainer>
-            <BarContainer></BarContainer>
-            <SearchCartContainer></SearchCartContainer>
-        </NavContainer>
+            <RightContainer className='right-container'>
+                <Search/>
+                <Cart/>
+                <LogIn/>
+            </RightContainer>
+        </HeaderContainer>
     )
 }
 
