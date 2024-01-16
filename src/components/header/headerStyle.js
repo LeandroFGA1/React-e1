@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import "../../assets/styles/palette.css"
 
 
 export const HeaderContainer = styled.div`
     width: 100%;
     height: 60px;
-    background-color: red;
+    background-color:var(--white);
     display: flex;
     font-size: 20px;
     justify-content: space-between;
@@ -81,16 +82,10 @@ export const HeaderContainer = styled.div`
         }
         .right-container{}
     }
-
-    @media only screen and (min-width: 300px) {
-        /* Estilos específicos para Extra large screens, TV (1201px y más) */
-        /* hacerlo proximamente cuando tengamos un tester */
-        
-    }
     .search-bar{
         animation: onBar 0.3s forwards ;
         position: absolute;
-        background-color: red;
+        background-color: var(--white);
         display: none;
         align-items: center;
         justify-content: center;
@@ -101,7 +96,7 @@ export const HeaderContainer = styled.div`
         }
         label{
             display: flex;
-            background-color: red;
+            background-color: var(--white);
             height: 100%;
             width: 100%;
             align-items: start;
@@ -232,7 +227,7 @@ export const NavbarContainer = styled.div`
         align-items: center;
         flex-direction: column;
         padding: 10px 0px;
-        background-color: purple;
+        background-color: var(--white);
     }
 
     

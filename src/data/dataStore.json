@@ -1,0 +1,962 @@
+[
+    {
+        "name": "genshin impact",
+        "ID": 1,
+        "imageID": "genshin-impact",
+        "price": 3.5,
+        "category": ["online", "rpg", "anime"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "the legend of zelda: breath of the wild",
+        "ID": 2,
+        "imageID": "the-legend-of-zelda-breath-of-the-wild",
+        "price": 49.99,
+        "category": ["adventure", "action", "fantasy"],
+        "system":["windows","apple"]
+    },
+    {
+        "name": "overwatch",
+        "ID": 3,
+        "imageID": "overwatch",
+        "price": 19.99,
+        "category": ["online", "fps", "multiplayer"],
+        "system":["windows"]
+    },
+    {
+        "name": "minecraft",
+        "ID": 4,
+        "imageID": "minecraft",
+        "price": 26.95,
+        "category": ["sandbox", "adventure", "indie"],
+        "system":["windows","android"]
+    },
+    {
+        "name": "doom eternal",
+        "ID": 5,
+        "imageID": "doom-eternal",
+        "price": 29.99,
+        "category": ["action", "fps", "horror"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "animal crossing: new horizons",
+        "ID": 6,
+        "imageID": "animal-crossing-new-horizons",
+        "price": 54.99,
+        "category": ["simulation", "life-simulation", "adventure"],
+        "system":["windows"]
+    },
+    {
+        "name": "fortnite",
+        "ID": 7,
+        "imageID": "fortnite",
+        "price": 0,
+        "category": ["online", "battle-royale", "multiplayer"],
+        "system":["windows"]
+    },
+    {
+        "name": "fallout 4",
+        "ID": 8,
+        "imageID": "fallout-4",
+        "price": 14.99,
+        "category": ["rpg", "open-world", "post-apocalyptic"],
+        "system":["windows"]
+    },
+    {
+        "name": "league of legends",
+        "ID": 9,
+        "imageID": "league-of-legends",
+        "price": 0,
+        "category": ["online", "moba", "strategy"],
+        "system":["windows"]
+    },
+    {
+        "name": "red dead redemption 2",
+        "ID": 10,
+        "imageID": "red-dead-redemption-2",
+        "price": 39.99,
+        "category": ["action", "western", "open-world"],
+        "system":["windows"]
+    },
+    {
+        "name": "cyberpunk 2077",
+        "ID": 11,
+        "imageID": "cyberpunk-2077",
+        "price": 49.99,
+        "category": ["rpg", "sci-fi", "open-world"],
+        "system":["windows"]
+    },
+    {
+        "name": "counter-strike: global offensive",
+        "ID": 12,
+        "imageID": "counter-strike-global-offensive",
+        "price": 14.99,
+        "category": ["online", "fps", "multiplayer"],
+        "system":["windows"]
+    },
+    {
+        "name": "the elder scrolls v: skyrim",
+        "ID": 13,
+        "imageID": "the-elder-scrolls-v-skyrim",
+        "price": 39.99,
+        "category": ["rpg", "open-world", "fantasy"],
+        "system":["windows"]
+    },
+    {
+        "name": "valorant",
+        "ID": 14,
+        "imageID": "valorant",
+        "price": 10,
+        "category": ["online", "fps", "tactical"],
+        "system":["windows"]
+    },
+    {
+        "name": "the witcher 3: wild hunt",
+        "ID": 15,
+        "imageID": "the-witcher-3-wild-hunt",
+        "price": 29.99,
+        "category": ["rpg", "action", "fantasy"],
+        "system":["windows"]
+    },
+    {
+        "name": "among us",
+        "ID": 16,
+        "imageID": "among-us",
+        "price": 4.99,
+        "category": ["online", "party", "indie"],
+        "system":["windows","android"]
+    },
+    {
+        "name": "star wars jedi: fallen order",
+        "ID": 17,
+        "imageID": "star-wars-jedi-fallen-order",
+        "price": 39.99,
+        "category": ["action", "adventure", "sci-fi"],
+        "system":["windows"]
+    },
+    {
+        "name": "rocket league",
+        "ID": 18,
+        "imageID": "rocket-league",
+        "price": 19.99,
+        "category": ["sports", "racing", "multiplayer"],
+        "system":["windows"]
+    },
+    {
+        "name": "assassin's creed valhalla",
+        "ID": 19,
+        "imageID": "assassins-creed-valhalla",
+        "price": 49.99,
+        "category": ["action", "adventure", "historical"],
+        "system":["windows"]
+    },
+    {
+        "name": "fornite",
+        "ID": 20,
+        "imageID": "fortnite",
+        "price": 10,
+        "category": ["online", "battle-royale", "multiplayer"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "world of warcraft",
+        "ID": 21,
+        "imageID": "world-of-warcraft",
+        "price": 14.99,
+        "category": ["online", "mmorpg", "fantasy"],
+        "system":["windows"]
+    },
+    {
+        "name": "far cry 6",
+        "ID": 22,
+        "imageID": "far-cry-6",
+        "price": 59.99,
+        "category": ["action", "open-world", "shooter"],
+        "system":["windows"]
+    },
+    {
+        "name": "final fantasy XV",
+        "ID": 23,
+        "imageID": "final-fantasy-xv",
+        "price": 39.99,
+        "category": ["rpg", "fantasy", "adventure"],
+        "system":["windows","apple"]
+    },
+    {
+        "name": "dead by daylight",
+        "ID": 24,
+        "imageID": "dead-by-daylight",
+        "price": 19.99,
+        "category": ["horror", "multiplayer", "survival"],
+        "system":["windows"]
+    },
+    {
+        "name": "pubg",
+        "ID": 25,
+        "imageID": "pubg",
+        "price": 29.99,
+        "category": ["online", "battle-royale", "shooter"],
+        "system":["windows","apple"]
+    },
+    {
+        "name": "rainbow six siege",
+        "ID": 26,
+        "imageID": "rainbow-six-siege",
+        "price": 19.99,
+        "category": ["online", "fps", "tactical"],
+        "system":["windows"]
+    },
+    {
+        "name": "monster hunter: world",
+        "ID": 27,
+        "imageID": "monster-hunter-world",
+        "price": 39.99,
+        "category": ["action", "rpg", "fantasy"],
+        "system":["windows"]
+    },
+    {
+        "name": "the division 2",
+        "ID": 28,
+        "imageID": "the-division-2",
+        "price": 24.99,
+        "category": ["online", "action", "shooter"],
+        "system":["windows"]
+    },
+    {
+        "name": "sims 4",
+        "ID": 29,
+        "imageID": "sims-4",
+        "price": 39.99,
+        "category": ["simulation", "life-simulation", "sandbox"],
+        "system":["windows","apple"]
+    },
+    {
+        "name": "resident evil village",
+        "ID": 30,
+        "imageID": "resident-evil-village",
+        "price": 49.99,
+        "category": ["horror", "action", "survival"],
+        "system":["windows"]
+    },
+    {
+        "name": "dota 2",
+        "ID": 31,
+        "imageID": "dota-2",
+        "price": 30,
+        "category": ["online", "moba", "strategy"],
+        "system":["windows"]
+    },
+    {
+        "name": "mass effect: legendary edition",
+        "ID": 32,
+        "imageID": "mass-effect-legendary-edition",
+        "price": 59.99,
+        "category": ["rpg", "sci-fi", "action"],
+        "system":["windows"]
+    },
+    {
+        "name": "ark: survival evolved",
+        "ID": 33,
+        "imageID": "ark-survival-evolved",
+        "price": 34.99,
+        "category": ["survival", "action", "open-world"],
+        "system":["windows"]
+    },
+    {
+        "name": "warframe",
+        "ID": 34,
+        "imageID": "warframe",
+        "price": 0,
+        "category": ["online", "action", "free-to-play"],
+        "system":["windows"]
+    },
+    {
+        "name": "civilization VI",
+        "ID": 35,
+        "imageID": "civilization-vi",
+        "price": 29.99,
+        "category": ["strategy", "turn-based", "historical"],
+        "system":["windows"]
+    },
+    {
+        "name": "forza horizon 4",
+        "ID": 36,
+        "imageID": "forza-horizon-4",
+        "price": 49.99,
+        "category": ["racing", "open-world", "simulation"],
+        "system":["windows"]
+    },
+    {
+        "name": "hitman 3",
+        "ID": 37,
+        "imageID": "hitman-3",
+        "price": 59.99,
+        "category": ["action", "stealth", "assassination"],
+        "system":["windows"]
+    },
+    {
+        "name": "dead space",
+        "ID": 38,
+        "imageID": "dead-space",
+        "price": 14.99,
+        "category": ["horror", "sci-fi", "action"],
+        "system":["windows"]
+    },
+    {
+        "name": "doom (2016)",
+        "ID": 39,
+        "imageID": "doom-2016",
+        "price": 19.99,
+        "category": ["action", "fps", "horror"],
+        "system":["windows"]
+    },
+    {
+        "name": "for honor",
+        "ID": 40,
+        "imageID": "for-honor",
+        "price": 29.99,
+        "category": ["action", "hack-and-slash", "multiplayer"],
+        "system":["windows"]
+    },
+    {
+        "name": "Super Mario Bros.",
+        "ID": 41,
+        "imageID": "super-mario-bros",
+        "price": 9.99,
+        "category": ["platformer", "adventure", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Pac-Man",
+        "ID": 42,
+        "imageID": "pac-man",
+        "price": 4.99,
+        "category": ["arcade", "retro", "maze"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Space Invaders",
+        "ID": 43,
+        "imageID": "space-invaders",
+        "price": 2.99,
+        "category": ["arcade", "shooter", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Donkey Kong",
+        "ID": 44,
+        "imageID": "donkey-kong",
+        "price": 7.99,
+        "category": ["platformer", "arcade", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "The Legend of Zelda",
+        "ID": 45,
+        "imageID": "the-legend-of-zelda",
+        "price": 12.99,
+        "category": ["adventure", "action", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Tetris",
+        "ID": 46,
+        "imageID": "tetris",
+        "price": 3.99,
+        "category": ["puzzle", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Street Fighter",
+        "ID": 47,
+        "imageID": "street-fighter",
+        "price": 5.99,
+        "category": ["fighting", "arcade", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Pong",
+        "ID": 48,
+        "imageID": "pong",
+        "price": 1.99,
+        "category": ["arcade", "sports", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Galaga",
+        "ID": 49,
+        "imageID": "galaga",
+        "price": 4.99,
+        "category": ["arcade", "shooter", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Mega Man",
+        "ID": 50,
+        "imageID": "mega-man",
+        "price": 8.99,
+        "category": ["platformer", "action", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Centipede",
+        "ID": 51,
+        "imageID": "centipede",
+        "price": 3.99,
+        "category": ["arcade", "shooter", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Asteroids",
+        "ID": 52,
+        "imageID": "asteroids",
+        "price": 2.99,
+        "category": ["arcade", "shooter", "retro"],
+        "system":["apple","android"]
+    },
+    {
+        "name": "Pac-Man",
+        "ID": 53,
+        "imageID": "pac-man",
+        "price": 4.99,
+        "category": ["arcade", "retro", "maze"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Duck Hunt",
+        "ID": 54,
+        "imageID": "duck-hunt",
+        "price": 6.99,
+        "category": ["shooter", "arcade", "retro"],
+        "system":["apple","android"]
+    },
+    {
+        "name": "Berzerk",
+        "ID": 55,
+        "imageID": "berzerk",
+        "price": 3.99,
+        "category": ["arcade", "shooter", "retro"],
+        "system":["apple"]
+    },
+    {
+        "name": "Adventure",
+        "ID": 56,
+        "imageID": "adventure",
+        "price": 5.99,
+        "category": ["adventure", "retro"],
+        "system":["apple"]
+    },
+    {
+        "name": "Pitfall!",
+        "ID": 57,
+        "imageID": "pitfall",
+        "price": 7.99,
+        "category": ["platformer", "adventure", "retro"],
+        "system":["apple"]
+    },
+    {
+        "name": "Breakout",
+        "ID": 58,
+        "imageID": "breakout",
+        "price": 2.99,
+        "category": ["arcade", "retro"],
+        "system":["apple","android"]
+    },
+    {
+        "name": "Zork",
+        "ID": 59,
+        "imageID": "zork",
+        "price": 4.99,
+        "category": ["text-adventure", "retro"],
+        "system":["apple","android"]
+    },
+    {
+        "name": "Space Invaders",
+        "ID": 60,
+        "imageID": "space-invaders",
+        "price": 2.99,
+        "category": ["arcade", "shooter", "retro"],
+        "system":["apple","android"]
+    },
+    {
+        "name": "Super Mario World",
+        "ID": 61,
+        "imageID": "super-mario-world",
+        "price": 19.99,
+        "category": ["platformer", "adventure", "retro"],
+        "system":["android"]
+    },
+    {
+        "name": "Sonic the Hedgehog",
+        "ID": 62,
+        "imageID": "sonic-the-hedgehog",
+        "price": 14.99,
+        "category": ["platformer", "adventure", "retro"],
+        "system":["android"]
+    },
+    {
+        "name": "The Legend of Zelda: A Link to the Past",
+        "ID": 63,
+        "imageID": "the-legend-of-zelda-a-link-to-the-past",
+        "price": 24.99,
+        "category": ["adventure", "action", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Street Fighter II",
+        "ID": 64,
+        "imageID": "street-fighter-ii",
+        "price": 29.99,
+        "category": ["fighting", "arcade", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Final Fantasy VI",
+        "ID": 65,
+        "imageID": "final-fantasy-vi",
+        "price": 39.99,
+        "category": ["rpg", "fantasy", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Mortal Kombat",
+        "ID": 66,
+        "imageID": "mortal-kombat",
+        "price": 19.99,
+        "category": ["fighting", "arcade", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Donkey Kong Country",
+        "ID": 67,
+        "imageID": "donkey-kong-country",
+        "price": 29.99,
+        "category": ["platformer", "adventure", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Star Fox",
+        "ID": 68,
+        "imageID": "star-fox",
+        "price": 24.99,
+        "category": ["shooter", "adventure", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Metal Gear Solid",
+        "ID": 69,
+        "imageID": "metal-gear-solid",
+        "price": 34.99,
+        "category": ["action", "stealth", "retro"],
+        "system":["windows"]
+    },
+    {
+        "name": "Doom II",
+        "ID": 70,
+        "imageID": "doom-ii",
+        "price": 19.99,
+        "category": ["fps", "horror", "retro"],
+        "system":["android"]
+    },
+    {
+        "name": "Chrono Trigger",
+        "ID": 71,
+        "imageID": "chrono-trigger",
+        "price": 44.99,
+        "category": ["rpg", "adventure", "retro"],
+        "system":["apple","android"]
+    },
+    {
+        "name": "Resident Evil",
+        "ID": 72,
+        "imageID": "resident-evil",
+        "price": 29.99,
+        "category": ["horror", "survival", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Pokémon Red and Blue",
+        "ID": 73,
+        "imageID": "pokemon-red-and-blue",
+        "price": 29.99,
+        "category": ["rpg", "adventure", "retro"],
+        "system":["apple","android"]
+    },
+    {
+        "name": "Half-Life",
+        "ID": 74,
+        "imageID": "half-life",
+        "price": 39.99,
+        "category": ["fps", "action", "retro"],
+        "system":["windows"]
+    },
+    {
+        "name": "Quake",
+        "ID": 75,
+        "imageID": "quake",
+        "price": 24.99,
+        "category": ["fps", "action", "retro"],
+        "system":["windows"]
+    },
+    {
+        "name": "Command & Conquer",
+        "ID": 76,
+        "imageID": "command-and-conquer",
+        "price": 29.99,
+        "category": ["strategy", "rts", "retro"],
+        "system":["apple","android"]
+    },
+    {
+        "name": "Diablo",
+        "ID": 77,
+        "imageID": "diablo",
+        "price": 34.99,
+        "category": ["action-rpg", "horror", "retro"],
+        "system":["windows","android"]
+    },
+    {
+        "name": "Tekken 3",
+        "ID": 78,
+        "imageID": "tekken-3",
+        "price": 24.99,
+        "category": ["fighting", "arcade", "retro"],
+        "system":["windows"]
+    },
+    {
+        "name": "GoldenEye 007",
+        "ID": 79,
+        "imageID": "goldeneye-007",
+        "price": 29.99,
+        "category": ["fps", "action", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Final Fantasy VII",
+        "ID": 80,
+        "imageID": "final-fantasy-vii",
+        "price": 39.99,
+        "category": ["rpg", "fantasy", "retro"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Halo: Combat Evolved",
+        "ID": 81,
+        "imageID": "halo-combat-evolved",
+        "price": 29.99,
+        "category": ["fps", "sci-fi", "action"],
+        "system":["windows"]
+    },
+    {
+        "name": "Grand Theft Auto: San Andreas",
+        "ID": 82,
+        "imageID": "gta-san-andreas",
+        "price": 39.99,
+        "category": ["action", "open-world", "crime"],
+        "system":["windows","android"]
+    },
+    {
+        "name": "The Elder Scrolls III: Morrowind",
+        "ID": 83,
+        "imageID": "morrowind",
+        "price": 34.99,
+        "category": ["rpg", "open-world", "fantasy"],
+        "system":["windows"]
+    },
+    {
+        "name": "World of Warcraft",
+        "ID": 84,
+        "imageID": "world-of-warcraft",
+        "price": 49.99,
+        "category": ["mmorpg", "fantasy", "online"],
+        "system":["windows"]
+    },
+    {
+        "name": "Counter-Strike: Source",
+        "ID": 85,
+        "imageID": "counter-strike-source",
+        "price": 19.99,
+        "category": ["fps", "multiplayer", "tactical"],
+        "system":["windows"]
+    },
+    {
+        "name": "The Legend of Zelda: Twilight Princess",
+        "ID": 86,
+        "imageID": "zelda-twilight-princess",
+        "price": 44.99,
+        "category": ["action-adventure", "fantasy", "retro"],
+        "system":["windows"]
+    },
+    {
+        "name": "Bioshock",
+        "ID": 87,
+        "imageID": "bioshock",
+        "price": 29.99,
+        "category": ["fps", "horror", "sci-fi"],
+        "system":["windows"]
+    },
+    {
+        "name": "Mass Effect",
+        "ID": 88,
+        "imageID": "mass-effect",
+        "price": 39.99,
+        "category": ["rpg", "sci-fi", "action"],
+        "system":["apple"]
+    },
+    {
+        "name": "Half-Life 2",
+        "ID": 89,
+        "imageID": "half-life-2",
+        "price": 29.99,
+        "category": ["fps", "sci-fi", "action"],
+        "system":["windows","android"]
+    },
+    {
+        "name": "Fallout 3",
+        "ID": 90,
+        "imageID": "fallout-3",
+        "price": 34.99,
+        "category": ["rpg", "open-world", "post-apocalyptic"],
+        "system":["windows"]
+    },
+    {
+        "name": "Portal",
+        "ID": 91,
+        "imageID": "portal",
+        "price": 14.99,
+        "category": ["puzzle", "fps", "sci-fi"],
+        "system":["windows"]
+    },
+    {
+        "name": "Call of Duty 4: Modern Warfare",
+        "ID": 92,
+        "imageID": "cod4-modern-warfare",
+        "price": 29.99,
+        "category": ["fps", "war", "multiplayer"],
+        "system":["windows"]
+    },
+    {
+        "name": "World of Warcraft: The Burning Crusade",
+        "ID": 93,
+        "imageID": "wow-burning-crusade",
+        "price": 39.99,
+        "category": ["mmorpg", "fantasy", "online"],
+        "system":["windows"]
+    },
+    {
+        "name": "Gears of War",
+        "ID": 94,
+        "imageID": "gears-of-war",
+        "price": 19.99,
+        "category": ["tps", "sci-fi", "action"],
+        "system":["apple"]
+    },
+    {
+        "name": "Assassin's Creed",
+        "ID": 95,
+        "imageID": "assassins-creed",
+        "price": 34.99,
+        "category": ["action-adventure", "historical", "stealth"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Left 4 Dead",
+        "ID": 96,
+        "imageID": "left-4-dead",
+        "price": 24.99,
+        "category": ["fps", "horror", "zombies"],
+        "system":["windows"]
+    },
+    {
+        "name": "Fable",
+        "ID": 97,
+        "imageID": "fable",
+        "price": 29.99,
+        "category": ["rpg", "action-adventure", "fantasy"],
+        "system":["android"]
+    },
+    {
+        "name": "Team Fortress 2",
+        "ID": 98,
+        "imageID": "team-fortress-2",
+        "price": 10,
+        "category": ["fps", "multiplayer", "cartoon"],
+        "system":["windows"]
+    },
+    {
+        "name": "Fallout: New Vegas",
+        "ID": 99,
+        "imageID": "fallout-new-vegas",
+        "price": 34.99,
+        "category": ["rpg", "open-world", "post-apocalyptic"],
+        "system":["windows"]
+    },
+    {
+        "name": "Dragon Age: Origins",
+        "ID": 100,
+        "imageID": "dragon-age-origins",
+        "price": 29.99,
+        "category": ["rpg", "fantasy", "action"],
+        "system":["windows"]
+    },
+    {
+        "name": "The Witcher 3: Wild Hunt",
+        "ID": 101,
+        "imageID": "the-witcher-3-wild-hunt",
+        "price": 39.99,
+        "category": ["rpg", "action", "fantasy"],
+        "system":["windows"]
+    },
+    {
+        "name": "Dark Souls",
+        "ID": 102,
+        "imageID": "dark-souls",
+        "price": 29.99,
+        "category": ["action-rpg", "fantasy", "challenging"],
+        "system":["windows"]
+    },
+    {
+        "name": "Stardew Valley",
+        "ID": 103,
+        "imageID": "stardew-valley",
+        "price": 14.99,
+        "category": ["simulation", "farming", "indie"],
+        "system":["windows","android"]
+    },
+    {
+        "name": "Fortnite",
+        "ID": 104,
+        "imageID": "fortnite",
+        "price": 20,
+        "category": ["battle-royale", "online", "multiplayer"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "The Last of Us",
+        "ID": 105,
+        "imageID": "the-last-of-us",
+        "price": 49.99,
+        "category": ["action-adventure", "horror", "survival"],
+        "system":["windows"]
+    },
+    {
+        "name": "Minecraft",
+        "ID": 106,
+        "imageID": "minecraft",
+        "price": 26.95,
+        "category": ["sandbox", "adventure", "indie"],
+        "system":["windows","android"]
+    },
+    {
+        "name": "Grand Theft Auto V",
+        "ID": 107,
+        "imageID": "gta-v",
+        "price": 59.99,
+        "category": ["action", "open-world", "crime"],
+        "system":["windows"]
+    },
+    {
+        "name": "Undertale",
+        "ID": 108,
+        "imageID": "undertale",
+        "price": 9.99,
+        "category": ["indie", "rpg", "adventure"],
+        "system":["windows"]
+    },
+    {
+        "name": "The Elder Scrolls V: Skyrim",
+        "ID": 109,
+        "imageID": "skyrim",
+        "price": 39.99,
+        "category": ["rpg", "open-world", "fantasy"],
+        "system":["windows"]
+    },
+    {
+        "name": "Dota 2",
+        "ID": 110,
+        "imageID": "dota-2",
+        "price": 50,
+        "category": ["moba", "strategy", "online"],
+        "system":["windows"]
+    },
+    {
+        "name": "Overwatch",
+        "ID": 111,
+        "imageID": "overwatch",
+        "price": 19.99,
+        "category": ["fps", "multiplayer", "team-based"],
+        "system":["windows"]
+    },
+    {
+        "name": "Red Dead Redemption 2",
+        "ID": 112,
+        "imageID": "red-dead-redemption-2",
+        "price": 49.99,
+        "category": ["action", "adventure", "western"],
+        "system":["windows"]
+    },
+    {
+        "name": "Horizon Zero Dawn",
+        "ID": 113,
+        "imageID": "horizon-zero-dawn",
+        "price": 39.99,
+        "category": ["action", "adventure", "open-world"],
+        "system":["windows"]
+    },
+    {
+        "name": "Cuphead",
+        "ID": 114,
+        "imageID": "cuphead",
+        "price": 19.99,
+        "category": ["indie", "run-and-gun", "platformer"],
+        "system":["windows"]
+    },
+    {
+        "name": "Fallout 4",
+        "ID": 115,
+        "imageID": "fallout-4",
+        "price": 14.99,
+        "category": ["rpg", "open-world", "post-apocalyptic"],
+        "system":["windows"]
+    },
+    {
+        "name": "Divinity: Original Sin 2",
+        "ID": 116,
+        "imageID": "divinity-original-sin-2",
+        "price": 44.99,
+        "category": ["rpg", "fantasy", "turn-based"],
+        "system":["windows"]
+    },
+    {
+        "name": "Persona 5",
+        "ID": 117,
+        "imageID": "persona-5",
+        "price": 49.99,
+        "category": ["rpg", "japanese", "turn-based"],
+        "system":["windows"]
+    },
+    {
+        "name": "Fortnite",
+        "ID": 118,
+        "imageID": "fortnite",
+        "price": 60,
+        "category": ["battle-royale", "online", "multiplayer"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Among Us",
+        "ID": 119,
+        "imageID": "among-us",
+        "price": 4.99,
+        "category": ["online", "party", "indie"],
+        "system":["windows","apple","android"]
+    },
+    {
+        "name": "Cyberpunk 2077",
+        "ID": 120,
+        "imageID": "cyberpunk-2077",
+        "price": 49.99,
+        "category": ["rpg", "sci-fi", "open-world"],
+        "system":["windows"]
+    }
+]

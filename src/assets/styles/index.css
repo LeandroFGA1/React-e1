@@ -6,6 +6,8 @@ body{
   padding: 0;
   top: 0;
   left: 0;
+  background-color: rgba(204, 204, 204, 0.8);
+  ;
 }
 a{
   text-decoration: none;
