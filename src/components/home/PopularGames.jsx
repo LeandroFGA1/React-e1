@@ -1,14 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import BigCard from '../cards/BigCard';
+import NormalCard from '../cards/NormalCard';
+import dataStore from "../../data/dataStore.json"
 
 const PopularGameContainer = styled.div`
     width: 100%;
     height: 70vh;
     background-color: antiquewhite;
     margin-top: -20px;
-
+`;
+const HeaderPopular = styled.div`
+    height: 50px;
+    
     span{
+        
         margin-left: 10px;
         font-size: 16px;
         display: flex;
@@ -24,11 +30,26 @@ const PopularGameContainer = styled.div`
         
     }
 `;
+const ContainerPopularGames = styled.div`
+    width: 100%;
+    height: calc(-60px + 76vh);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+`;
 
 function PopularGames() {
+
+    const renderBigCards = () => {
+        const firstFourGames = dataStore.slice(0, 4);
+        return firstFourGames.map((game) => (
+            <BigCard key={game.id} game={game} />
+        ));
+    };
+
     return (
         <PopularGameContainer>
-            <div>
+            <HeaderPopular>
                 <h2>Top Games 
                     <span>go to store
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -37,8 +58,11 @@ function PopularGames() {
                     </span>
                     
                 </h2>
-            </div>
-            <BigCard></BigCard>
+            </HeaderPopular>
+            <ContainerPopularGames>
+                {renderBigCards()}
+            </ContainerPopularGames>
+            
         </PopularGameContainer>
     )
 }

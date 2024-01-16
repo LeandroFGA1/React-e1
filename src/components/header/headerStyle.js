@@ -11,6 +11,9 @@ export const HeaderContainer = styled.div`
     justify-content: space-between;
     text-transform: capitalize;
     letter-spacing: 0.25px;
+    position: fixed;
+    top: 0;
+    left: 0;
 
 
     @media only screen and (min-width: 481px) {

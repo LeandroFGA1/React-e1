@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import directoryImages from '../../assets/images/directoryImages';
+import directoryGamesImages from '../../assets/images/games/directoryGamesImages';
 const BigCardContainer = styled.div`
     width: 300px;
     height: 400px;
-    background-color: bisque;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -52,7 +52,7 @@ const ImageCardBig = styled.div`
     position: relative;
     background-image: url(${directoryImages.noImage});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 290px 390px;
 `;
 const ShadowHover = styled.div`
     width: 100%;
@@ -69,13 +69,18 @@ const AddtoCart = styled.div`
     justify-content: end;
     svg{
         cursor: pointer;
-        width: 40px;
-        height: 40px;
-        fill: whitesmoke;
+        width: 30px;
+        height: 30px;
+        background-color: greenyellow;
+        border-radius: 5px;
         transition: all 0.5s ease-in-out;
+        margin-right: 10px;
+        padding: 2px;
         &:hover{
-            transform: rotate(90deg);
-            fill: var(--gold);
+            background-color: black;
+            path{
+                stroke: greenyellow;
+            }
         }
     }
 `;
@@ -93,16 +98,21 @@ const Platforms = styled.div`
         fill: whitesmoke;
     }
 `;
-function BigCard() {
+function BigCard({game}) {
+    const backgroundImage = game.imageID && directoryGamesImages[game.imageID]
+        ? `url(${directoryGamesImages[game.imageID]})`
+        : `url(${directoryImages.noImage})`;
+
+
+    const categoryText = game.category.slice(0, 2).join(', ');
+
     return (
         <BigCardContainer>
             <CardBig className='card-big'>
-                <ImageCardBig>
+                <ImageCardBig style={{ backgroundImage }}>
                     <ShadowHover className='shadow-hover'>
                         <AddtoCart>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                            </svg>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 5L19 12H7.37671M20 16H8L6 3H3M16 5.5H13.5M13.5 5.5H11M13.5 5.5V8M13.5 5.5V3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                         </AddtoCart>
                         <Platforms>
                                 <svg className='windows' fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 497.886 497.886" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <polygon points="227.959,39.869 227.959,242.386 496.549,242.386 496.549,0 "></polygon> <polygon points="1.336,244.746 211.172,244.746 211.172,41.818 1.336,72.798 "></polygon> <polygon points="227.959,458.017 496.549,497.886 496.549,261.535 227.959,261.535 "></polygon> <polygon points="1.336,425.086 211.172,456.066 211.172,261.531 1.336,261.531 "></polygon> </g> </g> </g> </g>
@@ -115,9 +125,9 @@ function BigCard() {
 
                 </ImageCardBig>
                 <InfoCardBig>
-                    <h3>hola</h3>
-                    <div className='category-game'>action</div>
-                    <div className='price-game'>$ 20</div>
+                    <h3 className='name-game'>{game.name}</h3>
+                    <div className='category-game'>{categoryText}</div>
+                    <div className='price-game'>$ {game.price}</div>
                 </InfoCardBig>
             </CardBig>
         </BigCardContainer>

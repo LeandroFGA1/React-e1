@@ -3,10 +3,9 @@ import directory from "../../assets/images/games/directoryGamesImages";
 import "../../assets/styles/palette.css"
 
 export const HeroContainer = styled.section`
+    margin-top: 60px;
     width: 100%;
     height: 70vh;
-    background-color: red;
-
     @media only screen and (min-width: 481px) {
     /* Estilos específicos para iPads, Tablets (481px - 768px) */
 
@@ -31,7 +30,7 @@ export const BannerPromo = styled.div`
     overflow: hidden;
     text-align: center;
     text-transform: capitalize;
-
+    
     b {
         color: var(--gold);
     }
