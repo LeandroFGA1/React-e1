@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useDispatch, useSelector } from "react-redux"
 import { incrementCountCart, restCountCart } from '../../../store/slice';
+import { Link } from 'react-router-dom';
 
 const CartContainer = styled.div`
     position: relative;
@@ -38,7 +39,7 @@ const CountCartBox = styled.div`
 const DropToggleCart = styled.div`
     cursor: default;
     position: absolute;
-    top:42.5px;
+    top:80px;
     width: 250px;
     right: 0;
     min-height: 150px;
@@ -91,7 +92,7 @@ const Cart = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                 </svg>
                 <h3 onClick={handleCheckboxClick}>YOUR CART IS EMPTY</h3>
-                <span onClick={wea}>look for the games you want <a href=''> here</a></span>
+                <span onClick={wea}>look for the games you want <Link to={"/store"}> here</Link></span>
             </DropToggleCart>
 
         </CartContainer>

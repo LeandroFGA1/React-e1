@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeaderContainer, MenuBar, RightContainer, NavbarContainer,LogoContainer } from './headerStyle'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import Search from './search/Search'
 import Cart from './cart/Cart'
 import LogIn from './log/LogIn'
@@ -20,14 +20,14 @@ function Header() {
                     <MenuBar className='bar-mid'/>
                     <MenuBar className='bar-bot'/>
                 </label>
-                <nav className='prueba'>
-                    <NavLink>
+                <nav>
+                    <NavLink to={"/store"}>
                         store
                     </NavLink>
-                    <NavLink>
+                    <NavLink to={"/about"}>
                         about
                     </NavLink>
-                    <NavLink>
+                    <NavLink to={"/suport"}>
                         suport
                     </NavLink>
                     
@@ -55,9 +55,9 @@ function Header() {
                 </div>
             </NavbarContainer>
             <LogoContainer className='logo-container'>
-                <a href="#">
+                <Link to={"/"}>
                     <img src={images.logo} alt="" />
-                </a>
+                </Link>
             </LogoContainer>
             <RightContainer className='right-container'>
                 <Search/>

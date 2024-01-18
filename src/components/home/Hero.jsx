@@ -4,6 +4,7 @@ import ButtomGetNow from '../bottoms/ButtomGetNow'
 import directoryImages from '../../assets/images/directoryImages'
 import PopularGames from './PopularGames'
 import BigCard from '../cards/BigCard'
+import Categories from './Categories'
 
 
 const Hero = () => {
@@ -21,6 +22,9 @@ const Hero = () => {
             <PopularGames>
                 <BigCard></BigCard>
             </PopularGames>
+            <Categories>
+                
+            </Categories>
         </>
     )
 }

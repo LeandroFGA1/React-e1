@@ -3,7 +3,6 @@ import directory from "../../assets/images/games/directoryGamesImages";
 import "../../assets/styles/palette.css"
 
 export const HeroContainer = styled.section`
-    margin-top: 60px;
     width: 100%;
     height: 70vh;
     @media only screen and (min-width: 481px) {

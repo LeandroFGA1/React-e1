@@ -3,7 +3,7 @@
         "name": "genshin impact",
         "ID": 1,
         "imageID": "genshin-impact",
-        "price": 3.5,
+        "price": 3.99,
         "category": ["online", "rpg", "anime"],
         "system":["windows","apple","android"]
     },
@@ -51,7 +51,7 @@
         "name": "fortnite",
         "ID": 7,
         "imageID": "fortnite",
-        "price": 0,
+        "price": 10.99,
         "category": ["online", "battle-royale", "multiplayer"],
         "system":["windows"]
     },
@@ -67,7 +67,7 @@
         "name": "league of legends",
         "ID": 9,
         "imageID": "league-of-legends",
-        "price": 0,
+        "price": 10.99,
         "category": ["online", "moba", "strategy"],
         "system":["windows"]
     },

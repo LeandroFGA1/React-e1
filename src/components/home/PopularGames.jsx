@@ -6,8 +6,7 @@ import dataStore from "../../data/dataStore.json"
 
 const PopularGameContainer = styled.div`
     width: 100%;
-    height: 70vh;
-    background-color: antiquewhite;
+    height:fit-content;
     margin-top: -20px;
 `;
 const HeaderPopular = styled.div`
@@ -27,14 +26,17 @@ const HeaderPopular = styled.div`
     
     h2{
         display: flex;
+        margin-left: 20px;
         
     }
 `;
 const ContainerPopularGames = styled.div`
     width: 100%;
-    height: calc(-60px + 76vh);
+    height: fit-content;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 `;
 
