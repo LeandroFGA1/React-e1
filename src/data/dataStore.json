@@ -44,7 +44,7 @@
         "ID": 6,
         "imageID": "animal-crossing-new-horizons",
         "price": 54.99,
-        "category": ["simulation", "life-simulation", "adventure"],
+        "category": ["simulation", "adventure"],
         "system":["windows"]
     },
     {
@@ -228,7 +228,7 @@
         "ID": 29,
         "imageID": "sims-4",
         "price": 39.99,
-        "category": ["simulation", "life-simulation", "sandbox"],
+        "category": ["simulation",  "sandbox"],
         "system":["windows","apple"]
     },
     {
@@ -268,7 +268,7 @@
         "ID": 34,
         "imageID": "warframe",
         "price": 0,
-        "category": ["online", "action", "free-to-play"],
+        "category": ["online", "action", "multiplayer"],
         "system":["windows"]
     },
     {
@@ -468,7 +468,7 @@
         "ID": 59,
         "imageID": "zork",
         "price": 4.99,
-        "category": ["text-adventure", "retro"],
+        "category": ["adventure", "retro"],
         "system":["apple","android"]
     },
     {
@@ -612,7 +612,7 @@
         "ID": 77,
         "imageID": "diablo",
         "price": 34.99,
-        "category": ["action-rpg", "horror", "retro"],
+        "category": ["action","rpg", "horror", "retro"],
         "system":["windows","android"]
     },
     {
@@ -684,7 +684,7 @@
         "ID": 86,
         "imageID": "zelda-twilight-princess",
         "price": 44.99,
-        "category": ["action-adventure", "fantasy", "retro"],
+        "category": ["action","adventure", "fantasy", "retro"],
         "system":["windows"]
     },
     {
@@ -756,7 +756,7 @@
         "ID": 95,
         "imageID": "assassins-creed",
         "price": 34.99,
-        "category": ["action-adventure", "historical", "stealth"],
+        "category": ["action","adventure", "historical", "stealth"],
         "system":["windows","apple","android"]
     },
     {
@@ -772,7 +772,7 @@
         "ID": 97,
         "imageID": "fable",
         "price": 29.99,
-        "category": ["rpg", "action-adventure", "fantasy"],
+        "category": ["rpg", "action","adventure", "fantasy"],
         "system":["android"]
     },
     {
@@ -812,7 +812,7 @@
         "ID": 102,
         "imageID": "dark-souls",
         "price": 29.99,
-        "category": ["action-rpg", "fantasy", "challenging"],
+        "category": ["action","rpg", "fantasy", "challenging"],
         "system":["windows"]
     },
     {
@@ -836,7 +836,7 @@
         "ID": 105,
         "imageID": "the-last-of-us",
         "price": 49.99,
-        "category": ["action-adventure", "horror", "survival"],
+        "category": ["action","adventure", "horror", "survival"],
         "system":["windows"]
     },
     {
@@ -892,8 +892,8 @@
         "ID": 112,
         "imageID": "red-dead-redemption-2",
         "price": 49.99,
-        "category": ["action", "adventure", "western"],
-        "system":["windows"]
+        "category": ["action", "western", "open-world"],
+        "system": ["windows"]
     },
     {
         "name": "Horizon Zero Dawn",
@@ -932,7 +932,7 @@
         "ID": 117,
         "imageID": "persona-5",
         "price": 49.99,
-        "category": ["rpg", "japanese", "turn-based"],
+        "category": ["rpg", "anime", "turn-based"],
         "system":["windows"]
     },
     {

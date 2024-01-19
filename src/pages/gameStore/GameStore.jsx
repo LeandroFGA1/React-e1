@@ -1,8 +1,9 @@
 import React from 'react'
+import GameStoreMain from '../../components/gameStore/GameStoreMain'
 
 const GameStore = () => {
   return (
-    <div>GameStore</div>
+    <GameStoreMain/>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import dataStore from "../../data/dataStore.json"
+import { countCategories } from '../../utilities/dataActions';
 
 const CategoriesContainer = styled.div`
     width: 100%;
@@ -51,31 +52,7 @@ const CategoryItemContainer = styled.div`
 `;
 
 const Categories = () => {
-
-    function countCategories(games) {
-        const countedCategories = {};
-    
-        games.forEach(game => {
-            if (game.category) {
-                game.category.forEach(category => {
-                    countedCategories[category] = (countedCategories[category] || 0) + 1;
-                });
-            }
-        });
-        
-        const sortedCategories = Object.entries(countedCategories).sort((a, b) => b[1] - a[1]);
-
-        const topCategories = sortedCategories.slice(0, 5);
-
-        const result = topCategories.reduce((acc, [category, count]) => {
-            acc[category] = count;
-            return acc;
-        }, {});
-    
-        return result;
-    }
-    
-    const resultCount = countCategories(dataStore);
+    const resultCount = countCategories(dataStore,6);
     console.log("Categories Count:", resultCount);
 
     return (

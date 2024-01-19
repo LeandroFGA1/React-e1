@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import directoryImages from '../../assets/images/directoryImages';
-import directoryGamesImages from '../../assets/images/games/directoryGamesImages';
+import { buildBackgroundImage, getSystemClassName } from '../../utilities/dataActions';
 const BigCardContainer = styled.div`
     width: 300px;
     height: 400px;
@@ -110,20 +110,10 @@ const Platforms = styled.div`
     }
 `;
 
-const SYSTEMS = ["windows","apple","android"]
+
 function BigCard({game}) {
-    const backgroundImage = game.imageID && directoryGamesImages[game.imageID]
-        ? `url(${directoryGamesImages[game.imageID]})`
-        : `url(${directoryImages.noImage})`;
-
-    
+    const backgroundImage = buildBackgroundImage(game);
     const categoryText = game.category.slice(0, 2).join(', ');
-
-    const getSystemClassName = (systems) => {
-        const validSystems = systems.filter(system => SYSTEMS.includes(system));
-        return validSystems.join(' ');
-    };
-
     const systemClassName = getSystemClassName(game.system);
 
     return (
