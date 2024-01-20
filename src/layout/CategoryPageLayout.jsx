@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { categoryPagePacker } from '../utilities/dataActions';
 import BigCard from '../components/cards/BigCard';
 import NormalCard from '../components/cards/NormalCard';
+import BarCategories from '../components/gameStore/BarCategories';
 
 const HeaderPage = styled.div`
     width: 100%;
@@ -24,6 +25,7 @@ function MainLayout({name}) {
     const generalGames = games.slice(3);
     return (
         <>
+            <BarCategories/>
             <HeaderPage>
                 {name}
             </HeaderPage>

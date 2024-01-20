@@ -4,6 +4,7 @@ import { removeDuplicatesByName } from '../../utilities/dataActions';
 import dataStore from "../../data/dataStore.json";
 import NormalCard from '../cards/NormalCard';
 import { Link } from 'react-router-dom';
+import BarCategories from './BarCategories';
 
 const GamesStoreMainContainer = styled.section`
     width: 100%;
@@ -33,6 +34,8 @@ const GameCategoryItems = styled.div`
     justify-content: center;
 `;
 
+
+
 function GameStoreMain() {
     const dataFilter = removeDuplicatesByName(dataStore);
 
@@ -57,9 +60,10 @@ function GameStoreMain() {
     const slicedData = dataFilter.slice(0, visibleGames);
 
     return (
+    <>
+        <BarCategories/>
         <GamesStoreMainContainer id="game-store">
             <GameCategoryContainer>
-
                 <GameCategoryItems>
                     {slicedData.map((game) => (
                         <NormalCard key={game.ID} game={game} />
@@ -67,6 +71,8 @@ function GameStoreMain() {
                 </GameCategoryItems>
             </GameCategoryContainer>
         </GamesStoreMainContainer>
+    </>
+        
     );
 }
 
