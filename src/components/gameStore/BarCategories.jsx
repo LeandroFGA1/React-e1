@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const BarCategoriesContainer = styled.div`
@@ -8,57 +8,77 @@ const BarCategoriesContainer = styled.div`
     background-color: azure;
     display: flex;
     align-items: center;
-    justify-content: center;
     top: 1;
     left: 1;
     z-index: 2;
-    ul{
+    font-weight: 300;
+    
+
+    ul {
         display: flex;
         align-items: center;
         gap: 10px;
         text-transform: capitalize;
-        width: 60%;
+        width: 100%;
         height: 100%;
-        li{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
             height: 100%;
             border-right: grey solid 0.5px;
             border-left: grey solid 0.5px;
             padding: 0 5px;
-            
-
-            a{
+            &:hover {
+                    background-color: #ddd;
+                }
+            a {
                 height: 100%;
                 display: flex;
                 align-items: center;
+                text-decoration: none;
+                color: black;
+
             }
         }
+        
+        
     }
 `;
+
 const OrderBtnsContainer = styled.div``;
 
 function BarCategories() {
+
+    const categories = [
+        'action',
+        'adventure',
+        'arcade',
+        'fantasy',
+        'fps',
+        'multiplayer',
+        'online',
+        'open-world',
+        'retro',
+        'rpg',
+    ];
+
     return (
-    <BarCategoriesContainer>
-        <ul>
-            <li>
-                <Link to={"/store/action"}>action</Link>
-            </li>
-            <li><Link to={"/store/adventure"}>adventure</Link></li>
-            <li><Link to={"/store/arcade"}>arcade</Link></li>
-            <li><Link to={"/store/fantasy"}>fantasy</Link></li>
-            <li><Link to={"/store/fps"}>fps</Link></li>
-            <li><Link to={"/store/multiplayer"}>multiplayer</Link></li>
-            <li><Link to={"/store/online"}>online</Link></li>
-            <li><Link to={"/store/open-world"}>Open World</Link></li>
-            <li><Link to={"/store/retro"}>retro</Link></li>
-            <li><Link to={"/store/rpg"}>RPG</Link></li>
-        </ul>
-        <OrderBtnsContainer>
-
-        </OrderBtnsContainer>
-
-    </BarCategoriesContainer>
-    )
+        <BarCategoriesContainer>
+            <ul>
+                {categories.map((category) => (
+                    <li key={category} >
+                        <Link to={`/store/${category}`}>
+                            {category}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+            <OrderBtnsContainer>
+                {/* ... (resto de tus elementos) */}
+            </OrderBtnsContainer>
+        </BarCategoriesContainer>
+    );
 }
 
-export default BarCategories
+export default BarCategories;

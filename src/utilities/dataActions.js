@@ -51,9 +51,18 @@ export const applyDiscount = (price, discountPercentage) => {
 };
 
 // Función para obtener un descuento aleatorio de la lista
-export const getRandomDiscount = () => {
-    const randomIndex = Math.floor(Math.random() * DISCOUNTS.length);
-    return DISCOUNTS[randomIndex];
+export const getRandomDiscount = (gameID) => {
+    const lastDigit = gameID % 10;
+
+    if (lastDigit === 0 || lastDigit === 3 || lastDigit === 8) {
+        return 30;
+    } else if (lastDigit === 1 || lastDigit === 4 || lastDigit === 9) {
+        return 50;
+    } else if (lastDigit === 5 || lastDigit === 6) {
+        return 60;
+    } else {
+        return 90;
+    }
 };
 
 
