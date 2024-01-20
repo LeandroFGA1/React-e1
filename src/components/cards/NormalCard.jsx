@@ -126,7 +126,7 @@ function NormalCard({game}) {
                     
                 </ImageCard>
                 <InfoCard className='info-card-normal'>
-                    <span className="title-normal-card">{game.name + game.ID}</span>
+                    <span className="title-normal-card">{game.name}</span>
                     <div className="price-normal-card-container">
                         <span className='rebate'>-{discountPercentage}%</span>
                         <span className="fake-price-normal-card">$ {game.price}</span>

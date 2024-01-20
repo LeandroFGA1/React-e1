@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import dataStore from "../../data/dataStore.json"
 import { countCategories } from '../../utilities/dataActions';
+import { Link } from 'react-router-dom';
 
 const CategoriesContainer = styled.div`
     width: 100%;
@@ -46,15 +47,13 @@ const CategoryItem = styled.div`
 const CategoryItemContainer = styled.div`
     width: 200px;
     height: 150px;
-    &:hover > div{
+    &:hover >a > div{
         margin-top: 0px;
     }
 `;
 
 const Categories = () => {
     const resultCount = countCategories(dataStore,6);
-    console.log("Categories Count:", resultCount);
-
     return (
         <>
             <CategoriesContainer>
@@ -68,9 +67,12 @@ const Categories = () => {
                     </CategoryItemContainer> */}
                     {Object.keys(resultCount).map(category => (
                         <CategoryItemContainer key={category}>
-                            <CategoryItem>
-                                {category}
-                            </CategoryItem>
+                            <Link to={`/store/${category}`}>
+                                <CategoryItem>
+                                    {category}
+                                </CategoryItem>
+                            </Link>
+                            
                         </CategoryItemContainer>
                     ))}
                     

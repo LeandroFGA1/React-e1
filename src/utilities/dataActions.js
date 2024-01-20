@@ -1,6 +1,6 @@
 import directoryGamesImages from "../assets/images/games/directoryGamesImages";
 import directoryImages from "../assets/images/directoryImages";
-
+import dataStore from "../data/dataStore.json"
 // categories
 export function countCategories(games,quantity) {
     const countedCategories = {};
@@ -71,8 +71,6 @@ export const removeDuplicatesByName = (games) => {
         if (!uniqueNames.has(lowercaseName)) {
             uniqueNames.add(lowercaseName);
             uniqueGames.push(game);
-        } else {
-            console.log(`Duplicate found: ${game.name}`);
         }
     }
 
@@ -103,3 +101,12 @@ export function hasEnoughGames(category) {
     return category.games.length >= 5;
 }
 
+
+export function categoryPagePacker(categoryName){
+    const dataFilter = removeDuplicatesByName(dataStore);
+    const filteredGames = dataFilter.filter((game) =>
+        game.category && game.category.includes(categoryName)
+    );
+    return filteredGames;
+
+}
