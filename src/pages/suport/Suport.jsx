@@ -1,8 +1,9 @@
 import React from 'react'
+import SupportForm from '../../components/form/SuportForm'
 
 const Suport = () => {
     return (
-        <div>Suport</div>
+        <SupportForm/>
     )
 }
 
