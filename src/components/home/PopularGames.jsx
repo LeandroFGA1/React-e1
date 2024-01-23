@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import BigCard from '../cards/BigCard';
-import NormalCard from '../cards/NormalCard';
-import dataStore from "../../data/dataStore.json"
+import dataStore from "../../data/dataStore.json";
+import { Link } from 'react-router-dom';
 
 const PopularGameContainer = styled.div`
     width: 100%;
@@ -52,7 +52,8 @@ function PopularGames() {
     return (
         <PopularGameContainer>
             <HeaderPopular>
-                <h2>Top Games 
+                <Link to={"/store"}>
+                    <h2>Top Games 
                     <span>go to store
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -60,6 +61,7 @@ function PopularGames() {
                     </span>
                     
                 </h2>
+                </Link>
             </HeaderPopular>
             <ContainerPopularGames>
                 {renderBigCards()}

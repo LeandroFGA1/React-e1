@@ -21,7 +21,7 @@ export const HeroContainer = styled.section`
 
 `;
 export const BannerPromo = styled.div`
-    background-color: var(--gray-dark);
+    background-color: var(--grey-dark);
     color: white;
     width: 100%;
     height: 40px;

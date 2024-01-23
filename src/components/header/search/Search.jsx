@@ -12,6 +12,7 @@ export const SearchContainer = styled.div`
         width: 25px;
         color:black;
     }
+    display: none;
 `;
 function Search() {
     const dispatch = useDispatch();

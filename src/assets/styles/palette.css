@@ -11,7 +11,7 @@
     --blue: #2196F3;
     --blue-light:#698ae8;  /* Azul - Puede ser útil para resaltar elementos */
 
-    --gray-light: #CCCCCC;  /* Gris claro - Puede ser útil para fondos secundarios */
-    --gray-dark: #333333;  /* Gris oscuro - Puede ser útil para textos secundarios */
-    --gray-light-transparent:rgba(204, 204, 204, 0.8);
+    --grey-light: #CCCCCC;  /* Gris claro - Puede ser útil para fondos secundarios */
+    --grey-dark: #333333;  /* Gris oscuro - Puede ser útil para textos secundarios */
+    --grey-light-transparent:rgba(204, 204, 204, 0.8);
 }

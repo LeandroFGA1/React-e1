@@ -3,39 +3,58 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import styled from 'styled-components';
 
-const FormSuportContainer = styled.form`
-    width: 90%;
-    height: fit-content;
+const FormSupportContainer = styled.form`
+    width: 50%;
     margin-left: 5%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     background-color: var(--white);
     border-radius: 5px;
-    label {
-        margin: 20px 0px 20px 30px;
-        input,textarea{
-            margin-left: 5px;
-            border: none;
-            background-color: var(--white);
-            border-bottom: 2px solid grey;
-            min-width: 100px;
-            &:focus{
-                outline: none;
-                
-            }
-            &:active{
-            
-            }
+    padding: 20px;
+
+    & > div {
+        margin-bottom: 20px;
+        min-height: 40px;
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--primary-color);
+        }
+
+        .error-form {
+            color: red;
+            margin-top: 5px;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: var(--grey-dark);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: var(--primary-hover-color);
         }
     }
 `;
-
-const NameContainer = styled.label``;
-const CategoryContainer = styled.label``;
-const DescriptionContainer = styled.label``;
-const EmailContainer = styled.label``;
 
 const SupportForm = () => {
     const formik = useFormik({
@@ -58,61 +77,65 @@ const SupportForm = () => {
 
     return (
         <>
-            <FormSuportContainer onSubmit={(e) => { e.preventDefault(); formik.handleSubmit(e); }}>
-                <NameContainer>
-                    Name:
+            <FormSupportContainer onSubmit={(e) => { e.preventDefault(); formik.handleSubmit(e); }}>
+                <div>
+                    <label htmlFor="name">Name:</label>
                     <input
                         type="text"
+                        id="name"
                         name="name"
                         value={formik.values.name}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
-                        required
                     />
-                    {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}
-                </NameContainer>
-                <CategoryContainer>
-                    Category:
-                    <select name="category" value={formik.values.category} onChange={formik.handleChange} onBlur={formik.handleBlur} required>
+                    {formik.touched.name && formik.errors.name ? <div className='error-form'>{formik.errors.name}</div> : null}
+                </div>
+
+                <div>
+                    <label htmlFor="category">Category:</label>
+                    <select
+                        id="category"
+                        name="category"
+                        value={formik.values.category}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                    >
                         <option value="">Select a category</option>
                         <option value="bug">Report a bug</option>
                         <option value="payment_issue">Payment issues</option>
                         <option value="suggestion">Suggestion</option>
                         <option value="others">Others</option>
-                        {/* Agrega aquí más opciones según sea necesario */}
                     </select>
-                    {formik.touched.category && formik.errors.category ? <div>{formik.errors.category}</div> : null}
-                </CategoryContainer>
+                    {formik.touched.category && formik.errors.category ? <div className="error-form">{formik.errors.category}</div> : null}
+                </div>
 
-                <DescriptionContainer>
-                    Description:
+                <div>
+                    <label htmlFor="description">Description:</label>
                     <textarea
+                        id="description"
                         name="description"
                         value={formik.values.description}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
-                        required
                     />
-                    {formik.touched.description && formik.errors.description ? <div>{formik.errors.description}</div> : null}
-                </DescriptionContainer>
+                    {formik.touched.description && formik.errors.description ? <div className="error-form">{formik.errors.description}</div> : null}
+                </div>
 
-                <EmailContainer>
-                    Email:
+                <div>
+                    <label htmlFor="email">Email:</label>
                     <input
                         type="email"
+                        id="email"
                         name="email"
                         value={formik.values.email}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
-                        required
                     />
-                    {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
-                </EmailContainer>
-
-                {/* Agrega aquí más campos según sea necesario para tu formulario de soporte */}
+                    {formik.touched.email && formik.errors.email ? <div className="error-form">{formik.errors.email}</div> : null}
+                </div>
 
                 <button type="submit">Submit</button>
-            </FormSuportContainer>
+            </FormSupportContainer>
         </>
     );
 };

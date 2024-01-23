@@ -2,12 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import directoryImages from '../../assets/images/directoryImages';
 import { buildBackgroundImage, getSystemClassName, getRandomDiscount, applyDiscount } from '../../utilities/dataActions';
+import { addToCart } from '../../store/slice';
+import { useDispatch } from 'react-redux';
 const NormalCardContainer = styled.div`
     width: 210px;
     height: 240px;
     display: flex;
     align-items: end;
     justify-content: center;
+    user-select: none;
 
     /* &:hover > .normal-card{
         margin-bottom: 2px;
@@ -49,11 +52,12 @@ const InfoCard = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    user-select: none;
     .title-normal-card{
         margin-left: 10px;
         text-transform: capitalize;
         text-overflow: ellipsis;
+        user-select: text;
     }
     .price-normal-card-container{
         height: 45px;
@@ -79,6 +83,8 @@ const InfoCard = styled.div`
             border-radius: 5px;
             display: none;
             margin-right: 5px;
+            user-select: none;
+            cursor: pointer;
         }
         
     }
@@ -112,7 +118,16 @@ function NormalCard({game}) {
     const systemClassName = getSystemClassName(game.system);
     const randomDiscount = getRandomDiscount(game.ID);
     const { discountedPrice, discountPercentage } = applyDiscount(game.price, randomDiscount);
-
+    const dispatch = useDispatch();
+    const addToCartHandler = () => {
+        dispatch(
+            addToCart({
+                name: game.name,
+                price: game.price,
+                quantity: 1
+            })
+        );
+    };
     return (
         <NormalCardContainer>
             <NormalCardItem className='normal-card'>
@@ -131,7 +146,7 @@ function NormalCard({game}) {
                         <span className='rebate'>-{discountPercentage}%</span>
                         <span className="fake-price-normal-card">$ {(game.price*100/(100-discountPercentage) ).toFixed(2) }</span>
                         <span className="price-normal-card">$ {(game.price).toFixed(2)}</span>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 5L19 12H7.37671M20 16H8L6 3H3M16 5.5H13.5M13.5 5.5H11M13.5 5.5V8M13.5 5.5V3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <svg onClick={addToCartHandler} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 5L19 12H7.37671M20 16H8L6 3H3M16 5.5H13.5M13.5 5.5H11M13.5 5.5V8M13.5 5.5V3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  ></path> </g></svg>
                     </div>
                 </InfoCard>
             </NormalCardItem>

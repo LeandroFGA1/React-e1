@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useDispatch, useSelector } from "react-redux"
-import { incrementCountCart, restCountCart } from '../../../store/slice';
+import {removeToCard } from '../../../store/slice';
 import { Link } from 'react-router-dom';
 
 const CartContainer = styled.div`
@@ -44,55 +44,75 @@ const DropToggleCart = styled.div`
     right: 0;
     min-height: 150px;
     height: fit-content;
-    background-color: #fc5e5e;
+    max-height: 400px;
+    background-color:var(--white);
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
+    overflow-y: auto;
     filter: drop-shadow(0 2px 2px black);
-    h3{
-        font-size: 14px;
+    .is-empty-cart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+        font-size: 16px;
         border-bottom: 1px solid black;
     }
     span{
-        font-size: 10px;
+        font-size: 12px;
         height: 30px;
         a{
+            filter: drop-shadow(1px 0px 0px black)drop-shadow(-1px 0px 0px black)drop-shadow(0 1px 0 black) drop-shadow(0 -1px 0 black);
             color:gold;
         }
     }
+    }
+    
 `;
 
 const Cart = () => {
     const NUMBER_ITEMS_IN_CART = useSelector(state => state.cartAction.count);
+    const cartItems = useSelector(state => state.cartAction.cartItems);
     const dispatch = useDispatch();
-    const controlCount = ()=>{
-        dispatch(incrementCountCart());
+    const removeUnit = ()=>{
+        dispatch(removeToCard())
     }
-    const wea =()=>{
-        dispatch(restCountCart())
-    }
-    const handleCheckboxClick = (e) => {
-        e.stopPropagation();
-        controlCount();
-    };    
     return (
         <CartContainer>
             <input type="checkbox" name="toggle-cart" id="toggle-cart" />
             <label htmlFor="toggle-cart">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                <CountCartBox onClick={1}>
+                <CountCartBox >
                     {NUMBER_ITEMS_IN_CART}
                 </CountCartBox>
             </label>
             
             <DropToggleCart className='drop-toggle-cart'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                </svg>
-                <h3 onClick={handleCheckboxClick}>YOUR CART IS EMPTY</h3>
-                <span onClick={wea}>look for the games you want <Link to={"/store"}> here</Link></span>
+                {cartItems.length > 0 ? (
+                    <div>
+                        {cartItems.map((item) => (
+                            <div key={item.name}>
+                                <p>{item.name}</p>
+                                <p>{item.price}</p>
+                                <p>{item.quantity}</p>
+                                <div onClick={removeUnit}>rest</div>
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <div className='is-empty-cart'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                        </svg>
+                        <h3>YOUR CART IS EMPTY</h3>
+                        <span>look for the games you want <Link to={"/store"}> here</Link></span>
+                    </div>
+                )}
+                
             </DropToggleCart>
 
         </CartContainer>

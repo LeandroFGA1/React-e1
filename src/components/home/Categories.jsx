@@ -30,7 +30,7 @@ const CategoriesContent = styled.div`
     gap: 20px;
 `;
 const CategoryItem = styled.div`
-    background-color: var(--gray-dark);
+    background-color: var(--grey-dark);
     width: 200px;
     height: 145px;
     border-radius: 5px;
