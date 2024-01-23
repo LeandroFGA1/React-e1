@@ -34,10 +34,13 @@ export const getSystemClassName = (systems) => {
 };
 
 export const buildBackgroundImage = (game) => {
-    return game.imageID && directoryGamesImages[game.imageID]
-        ? `url(${directoryGamesImages[game.imageID]})`
-        : `url(${directoryImages.noImage})`;
+    if (game.imageID && directoryGamesImages[game.imageID] && typeof directoryGamesImages[game.imageID] === 'string' && directoryGamesImages[game.imageID].trim() !== '') {
+        return `url(${directoryGamesImages[game.imageID]})`;
+    } else {
+        return `url(${directoryImages.noImage})`;
+    }
 };
+
 
 const DISCOUNTS = [30, 50, 60, 90];
 
