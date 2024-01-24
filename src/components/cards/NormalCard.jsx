@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import directoryImages from '../../assets/images/directoryImages';
 import { buildBackgroundImage, getSystemClassName, getRandomDiscount, applyDiscount } from '../../utilities/dataActions';
-import { addToCart } from '../../store/slice';
+import { addToCart,totalCost } from '../../store/slice';
 import { useDispatch } from 'react-redux';
 const NormalCardContainer = styled.div`
     width: 210px;
@@ -127,6 +127,7 @@ function NormalCard({game}) {
                 quantity: 1
             })
         );
+        dispatch(totalCost());
     };
     return (
         <NormalCardContainer>

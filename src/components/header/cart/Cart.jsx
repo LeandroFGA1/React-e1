@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useDispatch, useSelector } from "react-redux"
-import {removeToCard } from '../../../store/slice';
+import {removeToCard,addToCart,totalCost } from '../../../store/slice';
 import { Link } from 'react-router-dom';
 
 const CartContainer = styled.div`
@@ -40,7 +40,7 @@ const DropToggleCart = styled.div`
     cursor: default;
     position: absolute;
     top:80px;
-    width: 250px;
+    width: 350px;
     right: 0;
     min-height: 150px;
     height: fit-content;
@@ -71,15 +71,66 @@ const DropToggleCart = styled.div`
         }
     }
     }
-    
+    .item-card-container{
+        width: 300px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        h4{
+            width: 80px;
+            height: 100%;
+            font-size: 12px;
+        }
+        p{
+            width: 65px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        span{
+            width: 40px;
+            height: 100%;
+            font-size: 14px;
+        }
+        div{
+            width: 70px;
+            display: flex;
+            justify-content: space-between;
+            svg{
+                cursor: pointer;
+            }
+            .svg-add-cart:hover{
+                background-color: greenyellow;
+            }
+            .svg-remove-cart:hover{
+                background-color: var(--crimson);
+            }
+        }
+    }
 `;
 
 const Cart = () => {
     const NUMBER_ITEMS_IN_CART = useSelector(state => state.cartAction.count);
+    const TOTAL_COST = useSelector(state => state.cartAction.total)
     const cartItems = useSelector(state => state.cartAction.cartItems);
     const dispatch = useDispatch();
-    const removeUnit = ()=>{
-        dispatch(removeToCard())
+    const removeUnit = (index)=>{
+        dispatch(removeToCard(index));
+        dispatch(totalCost());
+    }
+    const addUnit = (name, price, quantity) => {
+        dispatch(
+            addToCart({
+                name: name,
+                price: price,
+                quantity: quantity
+            })
+        );
+        dispatch(totalCost());
     }
     return (
         <CartContainer>
@@ -94,14 +145,27 @@ const Cart = () => {
             <DropToggleCart className='drop-toggle-cart'>
                 {cartItems.length > 0 ? (
                     <div>
-                        {cartItems.map((item) => (
-                            <div key={item.name}>
-                                <p>{item.name}</p>
-                                <p>{item.price}</p>
-                                <p>{item.quantity}</p>
-                                <div onClick={removeUnit}>rest</div>
+                        {cartItems.map((item,index) => (
+                            <div key={item.name} className='item-card-container'>
+                                <h4>{item.name}</h4>
+                                <p>{(item.price*item.quantity).toFixed(2)}</p>
+                                <span>units: {item.quantity}</span>
+                                <div >
+                                    <svg onClick={() => addUnit(item.name, item.price, item.quantity)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="svg-add-cart">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+
+                                    <svg onClick={()=>removeUnit(index)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="svg-remove-cart">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
+                                    </svg>
+
+                                </div>
                             </div>
+
                         ))}
+                        <div className='tota-cost-cart'>
+                            total: {TOTAL_COST.toFixed(2)}
+                        </div>
                     </div>
                 ) : (
                     <div className='is-empty-cart'>

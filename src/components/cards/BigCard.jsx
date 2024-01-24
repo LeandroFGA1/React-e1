@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import directoryImages from '../../assets/images/directoryImages';
 import { buildBackgroundImage, getSystemClassName } from '../../utilities/dataActions';
 import { useDispatch } from "react-redux";
-import { addToCart } from '../../store/slice';
+import { addToCart,totalCost } from '../../store/slice';
 const BigCardContainer = styled.div`
     width: 300px;
     height: 400px;
@@ -127,6 +127,7 @@ function BigCard({game}) {
                 quantity: 1
             })
         );
+        dispatch(totalCost());
     };
     return (
         <BigCardContainer>

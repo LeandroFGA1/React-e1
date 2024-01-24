@@ -20,27 +20,31 @@ export const cartActions = createSlice({
     initialState: {
         count: 0,
         cartItems: [],
+        total : 0,
     },
     reducers: {
         incrementCountCart: (state) => {
             state.count = state.count + 1;
-        },
+        }
+        ,
         restCountCart: (state) => {
             if (state.count > 0){
                 state.count = state.count - 1;
             }
             
-        },
-        removeToCard: (state) =>{
-            const itemIndex = state.cartItems.findIndex(item => item.quantity > 0);
-            if (itemIndex !== -1) {
+        }
+        ,
+        removeToCard: (state,action) =>{
+            const itemIndex = action.payload; // Ahora, el payload es el índice del elemento a eliminar
+            if (itemIndex !== -1 && state.cartItems[itemIndex].quantity > 0) {
                 state.cartItems[itemIndex].quantity -= 1;
-        
+
                 if (state.cartItems[itemIndex].quantity === 0) {
                     state.cartItems.splice(itemIndex, 1);
                 }
+
+                state.count--;
             }
-            state.count --;
         }
         ,
         addToCart: (state, action) => {
@@ -52,7 +56,13 @@ export const cartActions = createSlice({
                 state.cartItems = [...state.cartItems, { name, price, quantity }];
             }
             state.count ++;
-        },
+        }
+        ,
+        totalCost :(state)=>{
+            state.total = state.cartItems.reduce((acc, item) => {
+                return acc + item.price * item.quantity;
+            },0)
+        }
     },
 });
 
@@ -76,4 +86,4 @@ export const searchDisplay = createSlice({
 
 export const {guardarMiNombre} =origenSlice.actions;
 export const {changeScreen} = searchDisplay.actions;
-export const {incrementCountCart, restCountCart, addToCart,removeToCard} = cartActions.actions;
+export const {incrementCountCart, restCountCart, addToCart,removeToCard,totalCost} = cartActions.actions;
